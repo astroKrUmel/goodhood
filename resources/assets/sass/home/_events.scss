@@ -1,0 +1,42 @@
+#events {
+    table {
+
+        tr {
+            &:nth-child(even) {
+                background: $white;
+                color: $black;
+            }
+
+            &:nth-child(odd) {
+                background: $grey;
+                color: $white;
+            }
+
+            th, td {
+                text-align: left;
+                @include dynamicTextOverflow(100%);
+
+                &.facebook-link {
+                    padding: 0;
+
+                    a {
+                        float: right;
+                        background: url('/images/' + 'fb.png') no-repeat;
+                        background-size: 100% auto;
+                        height: 30px;
+                        width: 30px;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            th {
+                padding: .75em 1em;
+            }
+
+            td {
+                padding: .5em 1em;
+            }
+        }
+    }
+}

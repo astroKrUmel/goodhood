@@ -1,0 +1,95 @@
+.navigation {
+    position: relative;
+    float: left;
+    width: calc(100% - 2em);
+    background: $white;
+    color: $black;
+    padding: .5em 1em .25em 1em;
+
+    > ul {
+        margin: 0;
+        padding: 0;
+
+        > li {
+            float: right;
+            margin: .5em 1em 0 1em;
+            cursor: pointer;
+
+            &.logo {
+                float: left;
+                margin: 0 1em;
+                background: url('/images/' + 'Goodhood_Logo.jpg') no-repeat;
+                background-size: 100% auto;
+                height: 40px;
+                width: 40px;
+            }
+
+            &.menu-mobile-button {
+                float: right;
+                margin: 0 1em;
+                background: url('/images/' + 'menu-mobile-button.png') no-repeat;
+                background-size: 100% auto;
+                height: 40px;
+                width: 40px;
+            }
+
+            &.artists, &.events, &.contact, &.impressum {
+                display: none;
+            }
+
+            // mobile Ansicht
+            ul {
+                display: none;
+                position: absolute;
+                top: 52px;
+                right: 0;
+                width: 200px;
+                background: $white;
+                z-index: 10;
+
+                li {
+                    float: left;
+                    width: 100%;
+                    margin: .5em 0;
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+
+
+    @media (min-width: $bp-sm) {
+        > ul {
+            > li {
+                float: right;
+                margin: .5em 1em 0 1em;
+                cursor: pointer;
+
+                &.logo {
+                    float: left;
+                    margin: 0 1em;
+                    background: url('/images/' + 'Goodhood_Logo.jpg') no-repeat;
+                    background-size: 100% auto;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                &.artists, &.events, &.contact, &.impressum {
+                    display: block;
+                }
+
+                &.menu-mobile-button {
+                    display: none;
+                }
+
+                &.menu-mobile {
+                    display: none;
+
+                    ul {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

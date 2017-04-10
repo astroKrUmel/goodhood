@@ -1,0 +1,36 @@
+#contact {
+    form {
+        margin: 0 auto;
+        min-width: calc(320px - 2em);
+        max-width: 450px;
+    }
+
+    label {
+        float: left;
+        font-weight: bold;
+        color: $white;
+        padding: 1em 0 .1em 0;
+    }
+
+    input {
+        width: 100%;
+        padding: .5em 1em;
+    }
+
+    textarea {
+        width: 100% !important;
+        padding: 1em;
+    }
+
+    button {
+        width: calc(100% + 28px);
+        padding: .5em 1em;
+        font-weight: bold;
+    }
+
+    span {
+        float: left;
+        color: $white;
+        padding: 1em 0 .1em 0;
+    }
+}

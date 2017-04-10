@@ -1,0 +1,25 @@
+// Fonts
+//@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+
+// bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// all variables
+@import "variables";
+
+// complete layout
+@import "layout";
+
+// helper
+@import "helper/helper";
+
+.home {
+    @import "home/home";
+}
+
+// artist (single, multi) styling
+#artist-container {
+    //@import "artists/artists";
+}
+

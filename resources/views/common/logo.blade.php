@@ -1,0 +1,1 @@
+<img src="../../images/Goodhood_Logo.jpg" class="main-image">

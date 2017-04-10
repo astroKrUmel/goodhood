@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: $black;
+
+    #layout {
+        float: left;
+        width: 100%;
+        background: $black-content;
+        margin: 0 auto;
+
+        @media (min-width: $bp-sm) {
+            margin-left: calc((100% - #{$bp-sm}) / 2);
+            width: $bp-sm;
+        }
+
+        @media (min-width: $bp-md) {
+            margin-left: calc((100% - #{$bp-md}) / 2);
+            width: $bp-md;
+        }
+    }
+
+    // no dots for ul and li tags
+    ul, li {
+        list-style-type: none;
+    }
+}
+
+

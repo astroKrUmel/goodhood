@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000; }
+  body #layout {
+    float: left;
+    width: 100%;
+    background: #222222;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      body #layout {
+        margin-left: calc((100% - 768px) / 2);
+        width: 768px; } }
+    @media (min-width: 992px) {
+      body #layout {
+        margin-left: calc((100% - 992px) / 2);
+        width: 992px; } }
+  body ul, body li {
+    list-style-type: none; }
+
+.home .navigation {
+  position: relative;
+  float: left;
+  width: calc(100% - 2em);
+  background: #fff;
+  color: #000;
+  padding: .5em 1em .25em 1em; }
+  .home .navigation > ul {
+    margin: 0;
+    padding: 0; }
+    .home .navigation > ul > li {
+      float: right;
+      margin: .5em 1em 0 1em;
+      cursor: pointer; }
+      .home .navigation > ul > li.logo {
+        float: left;
+        margin: 0 1em;
+        background: url("/images/Goodhood_Logo.jpg") no-repeat;
+        background-size: 100% auto;
+        height: 40px;
+        width: 40px; }
+      .home .navigation > ul > li.menu-mobile-button {
+        float: right;
+        margin: 0 1em;
+        background: url("/images/menu-mobile-button.png") no-repeat;
+        background-size: 100% auto;
+        height: 40px;
+        width: 40px; }
+      .home .navigation > ul > li.artists, .home .navigation > ul > li.events, .home .navigation > ul > li.contact, .home .navigation > ul > li.impressum {
+        display: none; }
+      .home .navigation > ul > li ul {
+        display: none;
+        position: absolute;
+        top: 52px;
+        right: 0;
+        width: 200px;
+        background: #fff;
+        z-index: 10; }
+        .home .navigation > ul > li ul li {
+          float: left;
+          width: 100%;
+          margin: .5em 0;
+          padding-left: 1em; }
+  @media (min-width: 768px) {
+    .home .navigation > ul > li {
+      float: right;
+      margin: .5em 1em 0 1em;
+      cursor: pointer; }
+      .home .navigation > ul > li.logo {
+        float: left;
+        margin: 0 1em;
+        background: url("/images/Goodhood_Logo.jpg") no-repeat;
+        background-size: 100% auto;
+        height: 40px;
+        width: 40px; }
+      .home .navigation > ul > li.artists, .home .navigation > ul > li.events, .home .navigation > ul > li.contact, .home .navigation > ul > li.impressum {
+        display: block; }
+      .home .navigation > ul > li.menu-mobile-button {
+        display: none; }
+      .home .navigation > ul > li.menu-mobile {
+        display: none; }
+        .home .navigation > ul > li.menu-mobile ul {
+          display: none; } }
+
+.home section {
+  padding: 0 1.5em; }
+
+.home h2 {
+  float: left;
+  width: 100%;
+  color: #fff;
+  margin: .5em 0; }
+  @media (min-width: 768px) {
+    .home h2 {
+      margin: 1em 0; } }
+
+.home .seperator {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 1em 0; }
+
+.home img {
+  max-width: 100%;
+  height: auto; }
+
+.home .main-image {
+  height: 10em; }
+
+.home #artists h2.sub-headline {
+  margin-bottom: calc(.5em - 0.5em); }
+
+.home #artists .artist {
+  position: relative;
+  float: left;
+  width: calc(50% - 0.5em); }
+  .home #artists .artist:nth-child(even) {
+    margin: 0.5em 0.5em 0.5em 0; }
+  .home #artists .artist:nth-child(odd) {
+    margin: 0.5em 0 0.5em 0.5em; }
+  .home #artists .artist strong {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center; }
+  .home #artists .artist:hover {
+    opacity: .8; }
+    .home #artists .artist:hover strong {
+      display: block; }
+
+@media (min-width: 480px) {
+  .home #artists .artist strong {
+    font-size: 1.4em; } }
+
+@media (min-width: 768px) {
+  .home #artists h2.sub-headline {
+    margin-bottom: calc(1em - 0.5em); }
+  .home #artists .artist {
+    width: calc(32.5%  - (2 * 0.5em) / 3); }
+    .home #artists .artist:nth-child(even), .home #artists .artist:nth-child(odd) {
+      margin: 0; }
+    .home #artists .artist:nth-child(3n+2) {
+      margin: 0.5em 0.5em 0.5em 0; }
+    .home #artists .artist:nth-child(3n+3) {
+      margin: 0.5em; }
+    .home #artists .artist:nth-child(3n+1) {
+      margin: 0.5em 0 0.5em 0.5em; } }
+
+.home #events table tr:nth-child(even) {
+  background: #fff;
+  color: #000; }
+
+.home #events table tr:nth-child(odd) {
+  background: #8E8E8E;
+  color: #fff; }
+
+.home #events table tr th, .home #events table tr td {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%; }
+  .home #events table tr th.facebook-link, .home #events table tr td.facebook-link {
+    padding: 0; }
+    .home #events table tr th.facebook-link a, .home #events table tr td.facebook-link a {
+      float: right;
+      background: url("/images/fb.png") no-repeat;
+      background-size: 100% auto;
+      height: 30px;
+      width: 30px;
+      text-decoration: none; }
+
+.home #events table tr th {
+  padding: .75em 1em; }
+
+.home #events table tr td {
+  padding: .5em 1em; }
+
+.home #contact form {
+  margin: 0 auto;
+  min-width: calc(320px - 2em);
+  max-width: 450px; }
+
+.home #contact label {
+  float: left;
+  font-weight: bold;
+  color: #fff;
+  padding: 1em 0 .1em 0; }
+
+.home #contact input {
+  width: 100%;
+  padding: .5em 1em; }
+
+.home #contact textarea {
+  width: 100% !important;
+  padding: 1em; }
+
+.home #contact button {
+  width: calc(100% + 28px);
+  padding: .5em 1em;
+  font-weight: bold; }
+
+.home #contact span {
+  float: left;
+  color: #fff;
+  padding: 1em 0 .1em 0; }
+
+/*# sourceMappingURL=app.css.map */

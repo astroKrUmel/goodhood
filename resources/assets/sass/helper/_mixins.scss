@@ -1,0 +1,8 @@
+/// @author: kevin schwab
+
+@mixin dynamicTextOverflow($width) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: $width;
+}

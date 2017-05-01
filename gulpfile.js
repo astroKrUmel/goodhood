@@ -1,8 +1,8 @@
 
-var elixir = require("laravel-elixir"),
+var elixir = require("laravel-elixir");
     //task = require('laravel-elixir-task'),
-    gulp = require("gulp"),
-    shell = require("gulp-shell");
+    //gulp = require("gulp"),
+    //shell = require("gulp-shell");
 
 //require('laravel-elixir-vue-2');
 require('laravel-elixir-uglify');

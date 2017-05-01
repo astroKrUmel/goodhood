@@ -3,19 +3,23 @@
         <li class="logo">
             <a href="/"></a>
         </li>
-        <li href="#artists" class="artists">Artists</li>
-        <li href="#events" class="events">Events</li>
-        <li href="#contact" class="contact">Contact</li>
-        <li href="#impressum" class="impressum">Impressum</li>
-
         <li class="menu-mobile-button"></li>
-        <li class="menu-mobile show">
+        <li class="menu">
             <ul>
-                <li href="#artists" class="artists">Artists</li>
-                <li href="#events" class="events">Events</li>
-                <li href="#contact" class="contact">Contact</li>
-                <li href="#impressum" class="impressum">Impressum</li>
+                <li class="artists">
+                    <a href="#artists">Artists</a>
+                </li>
+                <li class="events">
+                    <a href="#events">Events</a>
+                </li>
+                <li class="contact">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="impressum">
+                    <a href="#impressum">Impressum</a>
+                </li>
             </ul>
         </li>
     </ul>
 </nav>
+

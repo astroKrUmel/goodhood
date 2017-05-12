@@ -8,20 +8,16 @@
 
         @include('common.navigation')
 
-        <h2 class="name">{{ $artist->name }}</h2>
-        <br>
-        <ul>
-            @foreach($tracks as $track)
-                <li>
-                    {!! Helper::createEmbedTemplate($track['code'], 'mini') !!}
-                </li>
-            @endforeach
-        </ul>
+        @include('artists.mainPic')
 
-        <pre>
-        <?php var_dump($artist->toArray()) ?>
-        </pre>
+        @include('artists.biography')
 
+        @include('artists.mediaBox')
+
+        @include('artists.pictureGallery')
+
+        <!-- $event ist noch nicht gesetzt -->
+        {{--@include('common.events')--}}
     </div>
 
 @endsection

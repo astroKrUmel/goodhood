@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000; }
+  background: #000;
+  color: #fff; }
   body #layout {
     float: left;
     width: 100%;
@@ -30,6 +31,9 @@ h2 {
     h2 {
       margin: 1em 0; } }
 
+h3 {
+  font-size: 1.6em; }
+
 .seperator {
   float: left;
   width: 100%;
@@ -39,6 +43,21 @@ h2 {
 img {
   max-width: 100%;
   height: auto; }
+
+pre {
+  color: #fff; }
+
+a.link {
+  color: #fff;
+  font-size: 1.2em; }
+
+a.button {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6em;
+  padding: .5em 0; }
 
 .main-image {
   height: 10em; }
@@ -118,18 +137,15 @@ img {
           .navigation > ul > li.menu ul li {
             width: initial; } }
 
-.home #artists h2.sub-headline {
-  margin-bottom: calc(.5em - 0.5em); }
-
-.home #artists .artist {
+.picture-collection {
   position: relative;
   float: left;
   width: calc(50% - 0.5em); }
-  .home #artists .artist:nth-child(even) {
+  .picture-collection:nth-of-type(2n+1) {
     margin: 0.5em 0.5em 0.5em 0; }
-  .home #artists .artist:nth-child(odd) {
+  .picture-collection:nth-of-type(2n) {
     margin: 0.5em 0 0.5em 0.5em; }
-  .home #artists .artist strong {
+  .picture-collection strong {
     display: none;
     position: absolute;
     left: 50%;
@@ -138,28 +154,31 @@ img {
     transform: translate(-50%, -50%);
     width: 80%;
     text-align: center; }
-  .home #artists .artist:hover {
+  .picture-collection:hover {
     opacity: .8; }
-    .home #artists .artist:hover strong {
+    .picture-collection:hover strong {
       display: block; }
+  @media (min-width: 480px) {
+    .picture-collection strong {
+      font-size: 1.4em; } }
+  @media (min-width: 768px) {
+    .picture-collection {
+      width: calc(32.5%  - (2 * 0.5em) / 3); }
+      .picture-collection:nth-child(even), .picture-collection:nth-child(odd) {
+        margin: 0; }
+      .picture-collection:nth-of-type(3n+1) {
+        margin: 0.5em 0.5em 0.5em 0; }
+      .picture-collection:nth-of-type(3n+2) {
+        margin: 0.5em; }
+      .picture-collection:nth-of-type(3n+3) {
+        margin: 0.5em 0 0.5em 0.5em; } }
 
-@media (min-width: 480px) {
-  .home #artists .artist strong {
-    font-size: 1.4em; } }
+.home #artists h2.sub-headline {
+  margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .home #artists h2.sub-headline {
-    margin-bottom: calc(1em - 0.5em); }
-  .home #artists .artist {
-    width: calc(32.5%  - (2 * 0.5em) / 3); }
-    .home #artists .artist:nth-child(even), .home #artists .artist:nth-child(odd) {
-      margin: 0; }
-    .home #artists .artist:nth-child(3n+2) {
-      margin: 0.5em 0.5em 0.5em 0; }
-    .home #artists .artist:nth-child(3n+3) {
-      margin: 0.5em; }
-    .home #artists .artist:nth-child(3n+1) {
-      margin: 0.5em 0 0.5em 0.5em; } }
+    margin-bottom: .5em; } }
 
 .home #events table tr:nth-child(even) {
   background: #fff;
@@ -220,7 +239,34 @@ img {
   color: #fff;
   padding: 1em 0 .1em 0; }
 
-.artist section.artist .name {
-  color: #8eb4cb; }
+.artist #main-pic img {
+  margin-top: 5em; }
+
+.artist #biography .bio-text {
+  font-size: 1.2em;
+  line-height: 1.2em; }
+
+.artist #mediaBox .press-link {
+  float: right;
+  margin: .5em 0; }
+
+.artist #mediaBox .button {
+  float: left;
+  width: 100%; }
+
+.artist #mediaBox .music-and-links {
+  float: left;
+  width: 100%;
+  margin: 2em 0; }
+
+@media (min-width: 768px) {
+  .artist #mediaBox .music-and-links .music, .artist #mediaBox .music-and-links .links {
+    float: left;
+    width: calc(50% - .5em); }
+  .artist #mediaBox .music-and-links .music {
+    padding-right: 1em; }
+  .artist #mediaBox .music-and-links .links .link {
+    float: right;
+    padding: .5em; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -19,7 +19,7 @@ class Helper
             'picture'       => '%2F&light=1'
         ];
 
-        return "<iframe width='100%' height='60' frameborder='0' src='https://www.mixcloud.com/widget/iframe/?feed="
+        return "<iframe class='music mixcloud' width='100%' height='60' frameborder='0' src='https://www.mixcloud.com/widget/iframe/?feed="
         . $iframeLink . $style[$modus]
         ."'></iframe>";
     }

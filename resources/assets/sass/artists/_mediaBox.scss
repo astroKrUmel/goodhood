@@ -1,0 +1,46 @@
+#mediaBox {
+    .press-link {
+        float: right;
+        margin: .5em 0;
+    }
+
+    .button {
+        float: left;
+        width: 100%;
+    }
+
+    .music-and-links {
+        float: left;
+        width: 100%;
+        margin: 2em 0;
+        
+        .music {
+
+        }
+        
+        .links {
+            
+        }
+    }
+    
+    @media (min-width: $bp-sm) {
+        .music-and-links {
+
+            .music, .links {
+                float: left;
+                width: calc(50% - .5em);
+            }
+
+            .music {
+                padding-right: 1em;
+            }
+
+            .links {
+                .link {
+                    float: right;
+                    padding: .5em;
+                }
+            }
+        }
+    }
+}

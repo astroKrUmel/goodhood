@@ -15,6 +15,10 @@ h2 {
     }
 }
 
+h3 {
+    font-size: 1.6em;
+}
+
 
 // Trennstriche
 .seperator {
@@ -29,3 +33,21 @@ img {
     height: auto;
 }
 
+pre {
+    color: $white;
+}
+
+
+a.link {
+    color: $white;
+    font-size: 1.2em;
+}
+
+a.button {
+    background: $white;
+    color: $black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.6em;
+    padding: .5em 0;
+}

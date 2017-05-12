@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
-
 @section('content')
 
+    <div class="artist">
 
-    <section class="artist">
+        @include('common.logo')
+
+        @include('common.navigation')
 
         <h2 class="name">{{ $artist->name }}</h2>
         <br>
@@ -19,5 +21,7 @@
         <pre>
         <?php var_dump($artist->toArray()) ?>
         </pre>
-    </section>
-@stop
+
+    </div>
+
+@endsection

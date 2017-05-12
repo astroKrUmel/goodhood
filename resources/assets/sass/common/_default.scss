@@ -1,0 +1,31 @@
+section {
+    padding: 0 1.5em;
+}
+
+
+// Überschriften
+h2 {
+    float: left;
+    width: 100%;
+    color: $white;
+    margin: .5em 0;
+
+    @media (min-width: $bp-sm) {
+        margin: 1em 0;
+    }
+}
+
+
+// Trennstriche
+.seperator {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid $white;
+    padding: 1em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+

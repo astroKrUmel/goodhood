@@ -14,12 +14,13 @@
 // helper
 @import "helper/helper";
 
+// common/default styling
+@import "common/common";
+
 .home {
     @import "home/home";
 }
 
-// artist (single, multi) styling
-#artist-container {
-    //@import "artists/artists";
+.artist {
+    @import "artists/artist";
 }
-

@@ -18,38 +18,63 @@ body {
   body ul, body li {
     list-style-type: none; }
 
-.home .navigation {
+section {
+  padding: 0 1.5em; }
+
+h2 {
+  float: left;
+  width: 100%;
+  color: #fff;
+  margin: .5em 0; }
+  @media (min-width: 768px) {
+    h2 {
+      margin: 1em 0; } }
+
+.seperator {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding: 1em 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.main-image {
+  height: 10em; }
+
+.navigation {
   position: relative;
   float: left;
   width: 100%;
   background: #fff;
   color: #000; }
-  .home .navigation > ul {
+  .navigation > ul {
     margin: 0;
     padding: 0; }
-    .home .navigation > ul > li {
+    .navigation > ul > li {
       float: right;
       margin: .5em 1em 0 1em;
       cursor: pointer; }
-      .home .navigation > ul > li.logo {
+      .navigation > ul > li.logo {
         float: left;
         margin: 0 1em;
         background: url("/images/Goodhood_Logo.jpg") no-repeat;
         background-size: 100% auto;
         height: 39px;
         width: 39px; }
-      .home .navigation > ul > li.menu-mobile-button {
+      .navigation > ul > li.menu-mobile-button {
         float: right;
         margin: 0 1em;
         background: url("/images/menu-mobile-button.png") no-repeat;
         background-size: 100% auto;
         height: 40px;
         width: 40px; }
-        .home .navigation > ul > li.menu-mobile-button:hover + .menu ul {
+        .navigation > ul > li.menu-mobile-button:hover + .menu ul {
           height: 170px; }
-      .home .navigation > ul > li.menu ul:hover {
+      .navigation > ul > li.menu ul:hover {
         height: 170px; }
-      .home .navigation > ul > li ul {
+      .navigation > ul > li ul {
         position: absolute;
         top: 100%;
         right: 0;
@@ -61,14 +86,14 @@ body {
         overflow: hidden;
         -webkit-transition: height 200ms ease-in;
         transition: height 200ms ease-in; }
-        .home .navigation > ul > li ul li {
+        .navigation > ul > li ul li {
           float: left;
           width: 100%; }
-          .home .navigation > ul > li ul li:hover {
+          .navigation > ul > li ul li:hover {
             background: #000; }
-            .home .navigation > ul > li ul li:hover a {
+            .navigation > ul > li ul li:hover a {
               color: #fff; }
-          .home .navigation > ul > li ul li a {
+          .navigation > ul > li ul li a {
             float: left;
             padding: .5em 1em;
             color: #000;
@@ -76,49 +101,22 @@ body {
             font-weight: bold;
             font-size: 1.25em; }
   @media (min-width: 768px) {
-    .home .navigation > ul > li {
+    .navigation > ul > li {
       float: right;
       margin: .5em 1em 0 1em;
       cursor: pointer; }
-      .home .navigation > ul > li.menu-mobile-button {
+      .navigation > ul > li.menu-mobile-button {
         display: none; }
-        .home .navigation > ul > li.menu-mobile-button:hover + .menu ul {
-          height: 170px; }
-      .home .navigation > ul > li.menu ul:hover {
+      .navigation > ul > li.menu ul:hover {
         height: auto; }
-      .home .navigation > ul > li.menu {
+      .navigation > ul > li.menu {
         margin: 0; }
-        .home .navigation > ul > li.menu ul {
+        .navigation > ul > li.menu ul {
           height: auto;
           position: relative;
           width: 100%; }
-          .home .navigation > ul > li.menu ul li {
+          .navigation > ul > li.menu ul li {
             width: initial; } }
-
-.home section {
-  padding: 0 1.5em; }
-
-.home h2 {
-  float: left;
-  width: 100%;
-  color: #fff;
-  margin: .5em 0; }
-  @media (min-width: 768px) {
-    .home h2 {
-      margin: 1em 0; } }
-
-.home .seperator {
-  float: left;
-  width: 100%;
-  border-bottom: 1px solid #fff;
-  padding: 1em 0; }
-
-.home img {
-  max-width: 100%;
-  height: auto; }
-
-.home .main-image {
-  height: 10em; }
 
 .home #artists h2.sub-headline {
   margin-bottom: calc(.5em - 0.5em); }
@@ -221,5 +219,8 @@ body {
   float: left;
   color: #fff;
   padding: 1em 0 .1em 0; }
+
+.artist section.artist .name {
+  color: #8eb4cb; }
 
 /*# sourceMappingURL=app.css.map */

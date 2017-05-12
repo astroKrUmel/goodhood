@@ -10,14 +10,20 @@
 
         @include('artists.mainPic')
 
-        @include('artists.biography')
+        @if (!$artist->biography == '')
+            @include('artists.biography')
+        @endif
 
         @include('artists.mediaBox')
 
         @include('artists.pictureGallery')
 
-        <!-- $event ist noch nicht gesetzt -->
+                <!-- $event ist noch nicht gesetzt -->
         {{--@include('common.events')--}}
+
+        <pre>
+            <?php var_dump($artist->toArray()) ?>
+        </pre>
     </div>
 
 @endsection

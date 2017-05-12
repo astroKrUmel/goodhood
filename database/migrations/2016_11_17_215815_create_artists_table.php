@@ -16,9 +16,11 @@ class CreateArtistsTable extends Migration
         Schema::create('artists', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('description');
-            $table->string('facebookLink')->unique();
-            $table->string('mixcloudLink')->unique();
+            $table->string('route');
+            $table->string('biography')->nullalbe();
+            $table->string('facebookLink')->nullalbe();
+            $table->string('mixcloudLink')->nullalbe();
+            $table->string('link')->nullalbe();
             $table->timestamps();
         });
     }

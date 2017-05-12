@@ -7,7 +7,9 @@
     <a class="button button-booking" href="#">BOOKING</a>
 
     <div class="music-and-links">
-        {!! Helper::createEmbedTemplate($tracks[0]['code'], 'mini') !!}
+        @if (!$tracks->isEmpty())
+            {!! Helper::createEmbedTemplate($tracks[0]['code'], 'mini') !!}
+        @endif
 
         <div class="links">
             <a class="link" href="#" target="_blank">Link1</a>

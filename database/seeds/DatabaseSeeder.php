@@ -30,18 +30,77 @@ class ArtistTableSeeder extends Seeder
         DB::table('artists')->insert(array(
             array(
                 'id'   => 1,
-                'name' => 'kitkut',
-                'description' => 'fdrgrtghrth',
-                'facebookLink' => 'https://www.facebook.com/kitkutsbassroom/',
-                'mixcloudLink' => 'https://www.mixcloud.com/kitkut/'
+                'name' => 'Gucci Ming',
+                'route' => 'gucci-ming',
+                'biography' => '',
+                'facebookLink' => 'https://www.facebook.com/Mingi187',
+                'mixcloudLink' => '',
+                'link' => ''
             ),
             array(
                 'id'   => 2,
-                'name' => 'kitkut2',
-                'description' => 'fdrgrtghrt3rwrfweh',
-                'facebookLink' => 'https://www.facebook.com/kitkutsbassroom2/',
-                'mixcloudLink' => 'https://www.mixcloud.com/kitkut2/'
-            )
+                'name' => 'Phax',
+                'route' => 'phax',
+                'biography' => '',
+                'facebookLink' => 'https://www.facebook.com/phaxinstrumentals/',
+                'mixcloudLink' => 'https://www.mixcloud.com/phax/',
+                'link' => 'https://soundcloud.com/phax'
+            ),
+            array(
+                'id'   => 3,
+                'name' => 'Jenny Sharp',
+                'route' => 'jenny-sharp',
+                'biography' => '',
+                'facebookLink' => 'https://www.facebook.com/sharpradi0',
+                'mixcloudLink' => 'https://www.mixcloud.com/SharpRadio/',
+                'link' => 'https://soundcloud.com/sharpradio'
+            ),
+            array(
+                'id'   => 4,
+                'name' => 'KitKut',
+                'route' => 'kitkut',
+                'biography' => '',
+                'facebookLink' => 'https://www.facebook.com/kitkutsbassroom/',
+                'mixcloudLink' => 'https://www.mixcloud.com/kitkut/',
+                'link' => 'http://www.beyond07.com/'
+            ),
+            array(
+                'id'   => 5,
+                'name' => 'Alex The Kit',
+                'route' => 'alex-the-kit',
+                'biography' => '',
+                'facebookLink' => '',
+                'mixcloudLink' => '',
+                'link' => ''
+            ),
+            array(
+                'id'   => 6,
+                'name' => 'DJ Buzz',
+                'route' => 'dj-buzz',
+                'biography' => '',
+                'facebookLink' => '',
+                'mixcloudLink' => '',
+                'link' => ''
+            ),
+            array(
+                'id'   => 7,
+                'name' => 'Passerie',
+                'route' => 'passerie',
+                'biography' => '',
+                'facebookLink' => '',
+                'mixcloudLink' => '',
+                'link' => 'http://wasrap.de/'
+            ),
+            array(
+                'id'   => 8,
+                'name' => 'Goodkat',
+                'route' => 'goodkat',
+                'biography' => '',
+                'facebookLink' => '',
+                'mixcloudLink' => '',
+                'link' => ''
+            ),
+
         ));
     }
 }
@@ -91,13 +150,18 @@ class MixCloudTracksSeeder extends Seeder
 {
     public function run() {
         DB::table('mixcloudtracks')->insert([
+//            [
+//                'artist_id'     => 1,
+//                'code'          => 'https%3A%2F%2Fwww.mixcloud.com%2Fkitkut%2Fjenny-sharp-x-kitkut-kmco-teaser-mix'
+//            ],
+//            [
+//                'artist_id'     => 1,
+//                'code'          => 'https%3A%2F%2Fwww.mixcloud.com%2Fkitkut%2Fkitkut-beyond-mix-tape-part-iii'
+//            ],
+        // Jenny Sharp
             [
-                'artist_id'     => 1,
-                'code'          => 'https%3A%2F%2Fwww.mixcloud.com%2Fkitkut%2Fjenny-sharp-x-kitkut-kmco-teaser-mix'
-            ],
-            [
-                'artist_id'     => 1,
-                'code'          => 'https%3A%2F%2Fwww.mixcloud.com%2Fkitkut%2Fkitkut-beyond-mix-tape-part-iii'
+                'artist_id'     => 3,
+                'code'          => 'https://soundcloud.com/itspaperplanes/jenny-sharp-paper-planes-mix'
             ]
         ]);
     }

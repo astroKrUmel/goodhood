@@ -13,6 +13,10 @@ class Helper
 {
     public static function createEmbedTemplate($iframeLink = null, $modus = 'mini') {
 
+        if ($iframeLink === null) {
+            return false;
+        }
+
         $style = [
             'mini'          => '%2F&hide_cover=1&mini=1&light=1',
             'classic'       => '%2F&hide_cover=1&light=1',

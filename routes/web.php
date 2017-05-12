@@ -19,9 +19,9 @@
 Route::get('/', ['uses' => 'HomeController@index']);
 Route::get('/home', ['uses' => 'HomeController@index']);
 
-Route::get('albums', ['uses' => 'AlbumController@index']);
-Route::get('users/create', ['uses' => 'UserController@create']);
-Route::post('users', ['uses' => 'UserController@store']);
+//Route::get('albums', ['uses' => 'AlbumController@index']);
+//Route::get('users/create', ['uses' => 'UserController@create']);
+//Route::post('users', ['uses' => 'UserController@store']);
 
 
 Auth::routes();

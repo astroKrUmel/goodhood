@@ -45,6 +45,8 @@ img {
   height: auto; }
 
 pre {
+  float: left;
+  width: 100%;
   color: #fff; }
 
 a.link {
@@ -265,8 +267,10 @@ a.button {
     width: calc(50% - .5em); }
   .artist #mediaBox .music-and-links .music {
     padding-right: 1em; }
-  .artist #mediaBox .music-and-links .links .link {
-    float: right;
-    padding: .5em; } }
+  .artist #mediaBox .music-and-links .links {
+    float: right; }
+    .artist #mediaBox .music-and-links .links .link {
+      float: right;
+      padding: .5em; } }
 
 /*# sourceMappingURL=app.css.map */

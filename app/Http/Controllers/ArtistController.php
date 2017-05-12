@@ -21,7 +21,12 @@ class ArtistController extends Controller
     }
 
     public static function getArtist($name) {
-        $artist = Artist::where('name', '=', $name)->first();
+        $artist = Artist::where('route', '=', strtolower($name))->first();
+
+        if ($artist === null) {
+            return Redirect()->action('HomeController@index');
+        }
+
         $tracks = $artist->mixcloundtracks();
 
         return View('artists.artist', compact('artist', 'tracks'));

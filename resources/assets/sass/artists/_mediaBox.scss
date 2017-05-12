@@ -13,14 +13,6 @@
         float: left;
         width: 100%;
         margin: 2em 0;
-        
-        .music {
-
-        }
-        
-        .links {
-            
-        }
     }
     
     @media (min-width: $bp-sm) {
@@ -36,6 +28,8 @@
             }
 
             .links {
+                float: right;
+
                 .link {
                     float: right;
                     padding: .5em;

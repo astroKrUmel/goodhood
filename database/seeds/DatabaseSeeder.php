@@ -12,6 +12,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+//        DB::table('pictures')->delete();
+//        DB::table('artists_pictures')->delete();
         DB::table('mixcloudtracks')->delete();
         DB::table('events')->delete();
         DB::table('artists')->delete();
@@ -19,12 +21,13 @@ class DatabaseSeeder extends Seeder
         $this->call('ArtistTableSeeder');
         $this->call('EventsSeeder');
         $this->call('MixCloudTracksSeeder');
+//        $this->call('PicturesTableSeeder');
+//        $this->call('ArtistsPicturesTableSeeder');
     }
 }
 
 
-class ArtistTableSeeder extends Seeder
-{
+class ArtistTableSeeder extends Seeder {
     public function run() {
 
         DB::table('artists')->insert(array(
@@ -105,8 +108,7 @@ class ArtistTableSeeder extends Seeder
     }
 }
 
-class EventsSeeder extends Seeder
-{
+class EventsSeeder extends Seeder {
     public function run() {
         DB::table('events')->insert([
             [
@@ -146,22 +148,37 @@ class EventsSeeder extends Seeder
 }
 
 
-class MixCloudTracksSeeder extends Seeder
-{
+class MixCloudTracksSeeder extends Seeder {
     public function run() {
         DB::table('mixcloudtracks')->insert([
-//            [
-//                'artist_id'     => 1,
-//                'code'          => 'https%3A%2F%2Fwww.mixcloud.com%2Fkitkut%2Fjenny-sharp-x-kitkut-kmco-teaser-mix'
-//            ],
-//            [
-//                'artist_id'     => 1,
-//                'code'          => 'https%3A%2F%2Fwww.mixcloud.com%2Fkitkut%2Fkitkut-beyond-mix-tape-part-iii'
-//            ],
-        // Jenny Sharp
+            // Jenny Sharp
             [
                 'artist_id'     => 3,
                 'code'          => 'https://soundcloud.com/itspaperplanes/jenny-sharp-paper-planes-mix'
+            ]
+        ]);
+    }
+}
+
+class PicturesTableSeeder extends Seeder {
+    public function run() {
+        DB::table('pictures')->insert([
+            [
+                'id' => 1,
+                'modus' => 'main',
+                'picture' => file_get_contents('public/images/artists/gucci-ming.svg')
+            ]
+        ]);
+    }
+}
+
+class ArtistsPicturesTableSeeder extends Seeder {
+    public function run() {
+        DB::table('artists_pictures')->insert([
+            [
+                'id' => 1,
+                'artist_id' => 1,
+                'picture_id' => 1
             ]
         ]);
     }

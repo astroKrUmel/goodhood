@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use App\Artist;
 use Illuminate\Routing\Controller;
+use App\Helpers\Helper;
 
 
 class ArtistController extends Controller
@@ -28,7 +29,10 @@ class ArtistController extends Controller
         }
 
         $tracks = $artist->mixcloundtracks();
+        $mainImage = Helper::getMainArtistImage($name);
 
-        return View('artists.artist', compact('artist', 'tracks'));
+
+
+        return View('artists.artist', compact('artist', 'tracks', 'mainImage'));
     }
 }

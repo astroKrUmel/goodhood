@@ -23,6 +23,7 @@
 
         <pre>
             <?php var_dump($artist->toArray()) ?>
+            <?php var_dump($mainImage) ?>
         </pre>
     </div>
 

@@ -27,8 +27,4 @@ class Helper
         . $iframeLink . $style[$modus]
         ."'></iframe>";
     }
-
-    public static function getMainArtistImage ($name) {
-        return '../../images/artists/' . $name . '.jpg';
-    }
 }

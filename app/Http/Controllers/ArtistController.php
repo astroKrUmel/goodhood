@@ -26,6 +26,10 @@ class ArtistController extends Controller
             return Redirect()->action('HomeController@index');
         }
 
+        // count images
+        $artist->galleryImages = glob('images/artists/' . $artist->urlName . '/[!main]*.jpg');
+
+        // get mixcloudtracks
         $tracks = $artist->mixcloundtracks();
 
         return View('artists.artist', compact('artist', 'tracks'));

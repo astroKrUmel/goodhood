@@ -10,8 +10,6 @@ namespace App\Http\Controllers;
 
 use App\Artist;
 use Illuminate\Routing\Controller;
-use App\Helpers\Helper;
-
 
 class ArtistController extends Controller
 {

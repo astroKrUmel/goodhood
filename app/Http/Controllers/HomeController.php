@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Artist;
 use App\Event;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,8 @@ class HomeController extends Controller
      */
     public function index(){
         $events = Event::all();
-        return View('home', compact('events'));
+        $artists = Artist::all();
+        return View('home', compact('events', 'artists'));
     }
 
     public function partner() {

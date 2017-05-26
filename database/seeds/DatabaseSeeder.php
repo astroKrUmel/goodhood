@@ -34,7 +34,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 1,
                 'name' => 'Gucci Ming',
-                'route' => 'gucci-ming',
+                'urlName' => 'gucci-ming',
                 'biography' => '',
                 'facebookLink' => 'https://www.facebook.com/Mingi187',
                 'mixcloudLink' => '',
@@ -43,7 +43,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 2,
                 'name' => 'Phax',
-                'route' => 'phax',
+                'urlName' => 'phax',
                 'biography' => '',
                 'facebookLink' => 'https://www.facebook.com/phaxinstrumentals/',
                 'mixcloudLink' => 'https://www.mixcloud.com/phax/',
@@ -52,7 +52,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 3,
                 'name' => 'Jenny Sharp',
-                'route' => 'jenny-sharp',
+                'urlName' => 'jenny-sharp',
                 'biography' => '',
                 'facebookLink' => 'https://www.facebook.com/sharpradi0',
                 'mixcloudLink' => 'https://www.mixcloud.com/SharpRadio/',
@@ -61,7 +61,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 4,
                 'name' => 'KitKut',
-                'route' => 'kitkut',
+                'urlName' => 'kitkut',
                 'biography' => '',
                 'facebookLink' => 'https://www.facebook.com/kitkutsbassroom/',
                 'mixcloudLink' => 'https://www.mixcloud.com/kitkut/',
@@ -70,7 +70,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 5,
                 'name' => 'Alex The Kit',
-                'route' => 'alex-the-kit',
+                'urlName' => 'alex-the-kit',
                 'biography' => '',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
@@ -79,7 +79,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 6,
                 'name' => 'DJ Buzz',
-                'route' => 'dj-buzz',
+                'urlName' => 'dj-buzz',
                 'biography' => '',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
@@ -88,7 +88,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 7,
                 'name' => 'Passerie',
-                'route' => 'passerie',
+                'urlName' => 'passerie',
                 'biography' => '',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
@@ -97,7 +97,7 @@ class ArtistTableSeeder extends Seeder {
             array(
                 'id'   => 8,
                 'name' => 'Goodkat',
-                'route' => 'goodkat',
+                'urlName' => 'goodkat',
                 'biography' => '',
                 'facebookLink' => '',
                 'mixcloudLink' => '',

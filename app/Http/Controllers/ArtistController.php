@@ -22,7 +22,7 @@ class ArtistController extends Controller
     }
 
     public static function getArtist($name) {
-        $artist = Artist::where('route', '=', strtolower($name))->first();
+        $artist = Artist::where('urlName', '=', strtolower($name))->first();
 
         if ($artist === null) {
             return Redirect()->action('HomeController@index');

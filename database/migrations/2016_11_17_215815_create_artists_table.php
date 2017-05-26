@@ -16,7 +16,7 @@ class CreateArtistsTable extends Migration
         Schema::create('artists', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('route');
+            $table->string('urlName');
             $table->string('biography')->nullalbe();
             $table->string('facebookLink')->nullalbe();
             $table->string('mixcloudLink')->nullalbe();

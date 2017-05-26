@@ -8,9 +8,12 @@
 
         @include('common.navigation')
 
-        @include('artists.mainPic')
+        @if (isset($mainImage))
+            @include('artists.mainPic')
+        @endif
 
-        @if (!$artist->biography == '')
+
+        @if (isset($artist->biography))
             @include('artists.biography')
         @endif
 

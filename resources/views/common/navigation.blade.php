@@ -7,16 +7,19 @@
         <li class="menu">
             <ul>
                 <li class="artists">
-                    <a href="#artists">Artists</a>
+                    <a href="/home#artists">Artists</a>
                 </li>
                 <li class="events">
-                    <a href="#events">Events</a>
+                    <a href="/home#events">Events</a>
                 </li>
                 <li class="contact">
-                    <a href="#contact">Contact</a>
+                    <a href="/home#contact">Contact</a>
+                </li>
+                <li class="partners">
+                    <a href="/partner">Partner</a>
                 </li>
                 <li class="impressum">
-                    <a href="#impressum">Impressum</a>
+                    <a href="/impressum">Impressum</a>
                 </li>
             </ul>
         </li>

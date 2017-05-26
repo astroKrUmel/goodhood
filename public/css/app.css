@@ -20,7 +20,9 @@ body {
     list-style-type: none; }
 
 section {
-  padding: 0 1.5em; }
+  margin: 0 1.5em;
+  float: left;
+  width: calc(100% - 3em); }
 
 h2 {
   float: left;
@@ -92,9 +94,9 @@ a.button {
         height: 40px;
         width: 40px; }
         .navigation > ul > li.menu-mobile-button:hover + .menu ul {
-          height: 170px; }
+          height: 215px; }
       .navigation > ul > li.menu ul:hover {
-        height: 170px; }
+        height: 215px; }
       .navigation > ul > li ul {
         position: absolute;
         top: 100%;
@@ -115,7 +117,8 @@ a.button {
             .navigation > ul > li ul li:hover a {
               color: #fff; }
           .navigation > ul > li ul li a {
-            float: left;
+            width: 100%;
+            display: inline-block;
             padding: .5em 1em;
             color: #000;
             text-decoration: none;
@@ -214,7 +217,6 @@ a.button {
 
 .home #contact form {
   margin: 0 auto;
-  min-width: calc(320px - 2em);
   max-width: 450px; }
 
 .home #contact label {
@@ -224,22 +226,22 @@ a.button {
   padding: 1em 0 .1em 0; }
 
 .home #contact input {
-  width: 100%;
+  width: calc(100% - 2em);
   padding: .5em 1em; }
 
 .home #contact textarea {
-  width: 100% !important;
+  width: calc(100% - 2em);
   padding: 1em; }
 
 .home #contact button {
-  width: calc(100% + 28px);
+  width: calc(100% + 1px);
   padding: .5em 1em;
   font-weight: bold; }
 
 .home #contact span {
   float: left;
   color: #fff;
-  padding: 1em 0 .1em 0; }
+  padding: 1em 0; }
 
 .artist #main-pic img {
   margin-top: 5em; }

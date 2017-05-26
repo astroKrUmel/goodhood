@@ -22,9 +22,17 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
+    public function index(){
         $events = Event::all();
         return View('home', compact('events'));
+    }
+
+    public function partner() {
+        $partners = config('partners');
+        return View('partner', compact('partners'));
+    }
+
+    public function impressum() {
+        return View('impressum');
     }
 }

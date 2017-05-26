@@ -19,6 +19,11 @@
 Route::get('/', ['uses' => 'HomeController@index']);
 Route::get('/home', ['uses' => 'HomeController@index']);
 
+// NAVI
+Route::get('/partner', ['uses' => 'HomeController@partner']);
+Route::get('/impressum', ['uses' => 'HomeController@impressum']);
+
+
 //Route::get('albums', ['uses' => 'AlbumController@index']);
 //Route::get('users/create', ['uses' => 'UserController@create']);
 //Route::post('users', ['uses' => 'UserController@store']);
@@ -27,6 +32,6 @@ Route::get('/home', ['uses' => 'HomeController@index']);
 Auth::routes();
 
 
-
+// ARTISTS
 Route::get('artists', ['uses' => 'ArtistController@getAllArtists']);
 Route::get('artist/{name}', ['uses' => 'ArtistController@getArtist']);

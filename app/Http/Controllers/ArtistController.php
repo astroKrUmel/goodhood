@@ -29,8 +29,7 @@ class ArtistController extends Controller
         }
 
         $tracks = $artist->mixcloundtracks();
-        $mainImage = Helper::getMainArtistImage($name);
 
-        return View('artists.artist', compact('artist', 'tracks', 'mainImage'));
+        return View('artists.artist', compact('artist', 'tracks'));
     }
 }

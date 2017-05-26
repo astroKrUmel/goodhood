@@ -8,10 +8,7 @@
 
         @include('common.navigation')
 
-        @if (isset($mainImage))
-            @include('artists.mainPic')
-        @endif
-
+        @include('artists.mainPic')
 
         @if (isset($artist->biography))
             @include('artists.biography')
@@ -26,7 +23,6 @@
 
         <pre>
             <?php var_dump($artist->toArray()) ?>
-            <?php var_dump($mainImage) ?>
         </pre>
     </div>
 

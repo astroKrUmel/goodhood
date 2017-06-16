@@ -9,7 +9,7 @@
 
         @include('home.artists')
 
-        @include('common.events')
+        {{--@include('common.events')--}}
 
         @include('common.contact')
 

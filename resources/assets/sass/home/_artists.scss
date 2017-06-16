@@ -1,12 +1,5 @@
 #artists {
     h2.sub-headline {
-        margin-bottom: 0;
-    }
-
-
-    @media (min-width: $bp-sm) {
-        h2.sub-headline {
-            margin-bottom: .5em;
-        }
+        margin-bottom: .5em;
     }
 }

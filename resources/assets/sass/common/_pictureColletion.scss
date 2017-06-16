@@ -1,21 +1,13 @@
 .picture-collection {
     $image-space: .5em;
 
+    /// one pic in one row
     position: relative;
     float: left;
-    width: calc(50% - #{$image-space});
+    width: 100%;
+    margin: 0 0 calc(2 * #{$image-space}) 0;
 
-    // left
-    &:nth-of-type(2n+1) {
-        margin: $image-space $image-space $image-space 0;
-    }
-
-    // right
-    &:nth-of-type(2n) {
-        margin: $image-space 0 $image-space $image-space;
-    }
-
-    // text mittig setzen
+    /// text mittig setzen
     strong {
         display: none;
         position: absolute;
@@ -24,9 +16,10 @@
         transform: translate(-50%, -50%);
         width: 80%;
         text-align: center;
+        color: $white;
     }
 
-    // hover effekct
+    /// hover effekct
     &:hover {
         opacity: .8;
 
@@ -36,32 +29,46 @@
     }
 
 
+    /// two pics in one row
     @media (min-width: $bp-xs) {
+        width: calc(50% - #{$image-space});
+
+        /// left
+        &:nth-of-type(2n+1) {
+            margin: $image-space $image-space $image-space 0;
+        }
+
+        /// right
+        &:nth-of-type(2n) {
+            margin: $image-space 0 $image-space $image-space;
+        }
+
         strong {
             font-size: 1.4em;
         }
     }
 
+    /// three pics in one row
     @media (min-width: $bp-sm) {
-        // 32.5% -> is halt so^^
+        /// 32.5% -> is halt so^^
         width: calc(32.5%  - (2 * #{$image-space}) / 3);
 
-        // reset old settings
+        /// reset old settings
         &:nth-child(even), &:nth-child(odd) {
             margin: 0;
         }
 
-        // left
+        /// left
         &:nth-of-type(3n+1) {
             margin: $image-space $image-space $image-space 0;
         }
 
-        // middle
+        /// middle
         &:nth-of-type(3n+2) {
             margin: $image-space;
         }
 
-        // right
+        /// right
         &:nth-of-type(3n+3) {
             margin: $image-space 0 $image-space $image-space;
         }

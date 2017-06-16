@@ -2,7 +2,7 @@
     <h2 class="sub-headline">ARTISTS</h2>
 
     @foreach($artists as $artist)
-        <a class="picture-collection artist" href="">
+        <a class="picture-collection artist" href="artist/{{$artist->urlName}}">
             <picture>
                 <source srcset="../../images/artists/{{$artist->urlName}}/mainMobile.jpg" media="(max-width: 767px)">
                 <source srcset="../../images/artists/{{$artist->urlName}}/mainTablet.jpg" media="(min-width: 768px) and (max-width: 991px)">

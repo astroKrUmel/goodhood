@@ -44,4 +44,8 @@ class Artist extends Authenticatable
     public function mixcloundtracks() {
         return $this->hasMany('App\Mixcloudtrack')->get();
     }
+
+    public function events() {
+        return $this->belongsToMany('App\Event')->get();
+    }
 }

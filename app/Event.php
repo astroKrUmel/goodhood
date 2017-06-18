@@ -31,6 +31,10 @@ class Event extends Authenticatable
      */
     protected $hidden = [];
 
+    public function artists() {
+        return $this->belongsToMany('App\Artist')->get();
+    }
+
     /**
      * first letter of name in UPPERCASE
      */
@@ -49,4 +53,6 @@ class Event extends Authenticatable
     public function setCountryAttribute($value) {
         $this->attributes['country'] = ucfirst($value);
     }
+
+
 }

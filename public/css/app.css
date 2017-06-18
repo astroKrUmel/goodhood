@@ -182,9 +182,6 @@ a.button {
       .picture-collection:nth-of-type(3n+3) {
         margin: 0.5em 0 0.5em 0.5em; } }
 
-.home #artists h2.sub-headline {
-  margin-bottom: .5em; }
-
 .home #events table tr:nth-child(even) {
   background: #fff;
   color: #000; }
@@ -215,6 +212,9 @@ a.button {
 .home #events table tr td {
   padding: .5em 1em; }
 
+.home #artists h2.sub-headline {
+  margin-bottom: .5em; }
+
 .home #contact form {
   margin: 0 auto;
   max-width: 450px; }
@@ -242,6 +242,36 @@ a.button {
   float: left;
   color: #fff;
   padding: 1em 0; }
+
+.artist #events table tr:nth-child(even) {
+  background: #fff;
+  color: #000; }
+
+.artist #events table tr:nth-child(odd) {
+  background: #8E8E8E;
+  color: #fff; }
+
+.artist #events table tr th, .artist #events table tr td {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%; }
+  .artist #events table tr th.facebook-link, .artist #events table tr td.facebook-link {
+    padding: 0; }
+    .artist #events table tr th.facebook-link a, .artist #events table tr td.facebook-link a {
+      float: right;
+      background: url("/images/fb.png") no-repeat;
+      background-size: 100% auto;
+      height: 30px;
+      width: 30px;
+      text-decoration: none; }
+
+.artist #events table tr th {
+  padding: .75em 1em; }
+
+.artist #events table tr td {
+  padding: .5em 1em; }
 
 .artist #main-pic img {
   margin-top: 5em; }

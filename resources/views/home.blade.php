@@ -9,7 +9,9 @@
 
         @include('home.artists')
 
-        {{--@include('common.events')--}}
+        @if (isset($events) && count($events) > 0)
+            @include('common.events')
+        @endif
 
         @include('common.contact')
 

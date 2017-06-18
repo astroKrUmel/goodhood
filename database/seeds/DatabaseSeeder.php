@@ -12,17 +12,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-//        DB::table('pictures')->delete();
-//        DB::table('artists_pictures')->delete();
         DB::table('mixcloudtracks')->delete();
         DB::table('events')->delete();
         DB::table('artists')->delete();
+        DB::table('artist_event')->delete();
 
         $this->call('ArtistTableSeeder');
         $this->call('EventsSeeder');
         $this->call('MixCloudTracksSeeder');
-//        $this->call('PicturesTableSeeder');
-//        $this->call('ArtistsPicturesTableSeeder');
+        $this->call('ArtistEventTableSeeder');
     }
 }
 
@@ -112,36 +110,40 @@ class EventsSeeder extends Seeder {
     public function run() {
         DB::table('events')->insert([
             [
-                'name'          => 'party1',
-                'date'          => Carbon::now()->format('Y-m-d H:i:s'),
-                'location'      => 'alte Damenhandschuhfabrik',
-                'city'          => 'Leipzig',
+                'name'          => 'BASS EN MASS',
+                'date'          => Carbon::parse('16.04.2017'),
+                'location'      => 'Insel der Jugend',
+                'city'          => 'Magdeburg',
                 'country'       => 'Germany',
-                'facebooklink'  => '#1'
+                'facebooklink'  => 'https://www.facebook.com/events/276000336187964/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
-                'name'          => 'party2',
-                'date'          => Carbon::now()->format('Y-m-d H:i:s'),
-                'location'      => 'Absturz',
-                'city'          => 'Leipzig',
+                'name'          => 'Paper Planes',
+                'date'          => Carbon::parse('29.04.2017'),
+                'location'      => 'Weltecho',
+                'city'          => 'Chemnitz',
                 'country'       => 'Germany',
-                'facebooklink'  => '#2'
+                'facebooklink'  => 'https://www.facebook.com/events/1835004783488339/permalink/1860032137652270/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
-                'name'          => 'party3',
-                'date'          => Carbon::now()->format('Y-m-d H:i:s'),
-                'location'      => 'Werk 2',
+                'name'          => 'All4Hiphop Jam',
+                'date'          => Carbon::parse('03.06.2017'),
+                'location'      => 'Conne Island',
                 'city'          => 'Leipzig',
                 'country'       => 'Germany',
-                'facebooklink'  => '#3'
+                'facebooklink'  => 'https://www.facebook.com/events/240294323041422/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
-                'name'          => 'party4',
-                'date'          => Carbon::now()->format('Y-m-d H:i:s'),
-                'location'      => 'alte Damenhandschuhfabrik',
+                'name'          => 'Santas fünftes Fest - Täubchenthal x Elipamanoke - #5/7',
+                'date'          => Carbon::parse('24.05.2017'),
+                'location'      => 'Täubchenthal',
                 'city'          => 'Leipzig',
                 'country'       => 'Germany',
-                'facebooklink'  => '#4'
+                'facebooklink'  => 'https://www.facebook.com/events/217515852054483/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ]
         ]);
     }
@@ -151,7 +153,6 @@ class EventsSeeder extends Seeder {
 class MixCloudTracksSeeder extends Seeder {
     public function run() {
         DB::table('mixcloudtracks')->insert([
-            // Jenny Sharp
             [
                 'artist_id'     => 3,
                 'code'          => 'https://soundcloud.com/itspaperplanes/jenny-sharp-paper-planes-mix'
@@ -180,6 +181,37 @@ class ArtistsPicturesTableSeeder extends Seeder {
                 'artist_id' => 1,
                 'picture_id' => 1
             ]
+        ]);
+    }
+}
+
+
+class ArtistEventTableSeeder extends Seeder {
+    public function run() {
+        $artistsFromConfig = config('goodHoodMusicConfig.artists');
+
+        DB::table('artist_event')->insert([
+            [
+                'event_id' => 1,
+                'artist_id' => $artistsFromConfig['kitkut']
+            ],
+            [
+                'event_id' => 2,
+                'artist_id' => $artistsFromConfig['jenny-sharp']
+            ],
+            [
+                'event_id' => 3,
+                'artist_id' => $artistsFromConfig['passerie']
+            ],
+            [
+                'event_id' => 3,
+                'artist_id' => $artistsFromConfig['jenny-sharp']
+            ],
+            [
+                'event_id' => 4,
+                'artist_id' => $artistsFromConfig['kitkut']
+            ],
+
         ]);
     }
 }

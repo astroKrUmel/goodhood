@@ -24,7 +24,19 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
+        // all events and the forgein playing artists
         $events = Event::all();
+        foreach ($events as $event) {
+            $artists = $event->artists();
+
+            for ($i=0; $i<count($artists); $i++) {
+                $event->artistNames .= $artists[$i]['name'] . ', ';
+            }
+
+            $event->artistNames = rtrim($event->artistNames, ', ');
+        }
+
+        // all artists
         $artists = Artist::all();
         return View('home', compact('events', 'artists'));
     }

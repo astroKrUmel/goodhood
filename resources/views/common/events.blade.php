@@ -9,11 +9,12 @@
             <th>Location</th>
             <th></th>
         </tr>
+
         @foreach ($events as $event)
             <tr>
                 <td>{{$event->name}}</td>
                 <td>{{$event->date}}</td>
-                <td>{{$event->name}}</td>
+                <td>{{$event->artistNames}}</td>
                 <td>{{$event->city}}</td>
                 <td>{{$event->location}}</td>
                 <td class="facebook-link">
@@ -21,6 +22,7 @@
                 </td>
             </tr>
         @endforeach
+
     </table>
 
     <div class="seperator"></div>

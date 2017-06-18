@@ -3,7 +3,6 @@
 @section('content')
 
     <div class="artist">
-
         @include('common.logo')
 
         @include('common.navigation')
@@ -18,12 +17,13 @@
 
         @include('artists.pictureGallery')
 
-                <!-- $event ist noch nicht gesetzt -->
-        {{--@include('common.events')--}}
+        @if (isset($events) && count($events) > 0)
+            @include('common.events')
+        @endif
 
-        <pre>
-            <?php var_dump($artist->toArray()) ?>
-        </pre>
+        {{--<pre>--}}
+            {{--<?php var_dump($events->toArray()) ?>--}}
+        {{--</pre>--}}
     </div>
 
 @endsection

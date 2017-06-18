@@ -29,7 +29,7 @@ class ArtistController extends Controller
         }
 
         // get his own events
-        $events = $artist->events();
+        $events = $artist->events()->take(10);
 
         // first artist for every event
         foreach ($events as $event) {

@@ -24,15 +24,16 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        // all events and the forgein playing artists
-        $events = Event::all();
+        // last 20 events and the forgein playing artists
+        $events = Event::all()->take(20);
+
         foreach ($events as $event) {
             $artists = $event->artists();
 
+            // create artists name string
             for ($i=0; $i<count($artists); $i++) {
                 $event->artistNames .= $artists[$i]['name'] . ', ';
             }
-
             $event->artistNames = rtrim($event->artistNames, ', ');
         }
 

@@ -182,35 +182,61 @@ a.button {
       .picture-collection:nth-of-type(3n+3) {
         margin: 0.5em 0 0.5em 0.5em; } }
 
-.home #events table tr:nth-child(even) {
-  background: #fff;
-  color: #000; }
+.home #events .table .table-row {
+  float: left;
+  width: 100%;
+  text-decoration: none; }
+  .home #events .table .table-row:nth-child(even) {
+    background: #fff;
+    color: #000; }
+  .home #events .table .table-row:nth-child(odd) {
+    background: #8E8E8E;
+    color: #fff; }
+  .home #events .table .table-row:hover {
+    opacity: .8; }
+  .home #events .table .table-row span {
+    float: left;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-right: .25em;
+    padding: .5em 0 .5em .5em; }
+  .home #events .table .table-row .name {
+    width: calc(100% - 1em); }
+  .home #events .table .table-row .date,
+  .home #events .table .table-row .artists,
+  .home #events .table .table-row .city,
+  .home #events .table .table-row .location {
+    display: none; }
 
-.home #events table tr:nth-child(odd) {
+.home #events .table .table-head span {
+  padding: .75em 0 .75em .5em;
   background: #8E8E8E;
   color: #fff; }
 
-.home #events table tr th, .home #events table tr td {
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 100%; }
-  .home #events table tr th.facebook-link, .home #events table tr td.facebook-link {
-    padding: 0; }
-    .home #events table tr th.facebook-link a, .home #events table tr td.facebook-link a {
-      float: right;
-      background: url("/images/fb.png") no-repeat;
-      background-size: 100% auto;
-      height: 30px;
-      width: 30px;
-      text-decoration: none; }
+@media (min-width: 480px) {
+  .home #events .table .table-row .name {
+    width: calc(70% - 1em); }
+  .home #events .table .table-row .location {
+    display: block;
+    width: calc(30% - 1em); } }
 
-.home #events table tr th {
-  padding: .75em 1em; }
-
-.home #events table tr td {
-  padding: .5em 1em; }
+@media (min-width: 768px) {
+  .home #events .table .table-row .name {
+    width: calc(30% - 1em); }
+  .home #events .table .table-row .location {
+    width: calc(15% - 1em); }
+  .home #events .table .table-row .artists {
+    display: block;
+    width: calc(20% - 1em); }
+  .home #events .table .table-row .city {
+    display: block;
+    width: calc(20% - 1em); }
+  .home #events .table .table-row .date {
+    display: block;
+    width: calc(15% - 1em); } }
 
 .home #artists h2.sub-headline {
   margin-bottom: .5em; }
@@ -243,35 +269,61 @@ a.button {
   color: #fff;
   padding: 1em 0; }
 
-.artist #events table tr:nth-child(even) {
-  background: #fff;
-  color: #000; }
+.artist #events .table .table-row {
+  float: left;
+  width: 100%;
+  text-decoration: none; }
+  .artist #events .table .table-row:nth-child(even) {
+    background: #fff;
+    color: #000; }
+  .artist #events .table .table-row:nth-child(odd) {
+    background: #8E8E8E;
+    color: #fff; }
+  .artist #events .table .table-row:hover {
+    opacity: .8; }
+  .artist #events .table .table-row span {
+    float: left;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    padding-right: .25em;
+    padding: .5em 0 .5em .5em; }
+  .artist #events .table .table-row .name {
+    width: calc(100% - 1em); }
+  .artist #events .table .table-row .date,
+  .artist #events .table .table-row .artists,
+  .artist #events .table .table-row .city,
+  .artist #events .table .table-row .location {
+    display: none; }
 
-.artist #events table tr:nth-child(odd) {
+.artist #events .table .table-head span {
+  padding: .75em 0 .75em .5em;
   background: #8E8E8E;
   color: #fff; }
 
-.artist #events table tr th, .artist #events table tr td {
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 100%; }
-  .artist #events table tr th.facebook-link, .artist #events table tr td.facebook-link {
-    padding: 0; }
-    .artist #events table tr th.facebook-link a, .artist #events table tr td.facebook-link a {
-      float: right;
-      background: url("/images/fb.png") no-repeat;
-      background-size: 100% auto;
-      height: 30px;
-      width: 30px;
-      text-decoration: none; }
+@media (min-width: 480px) {
+  .artist #events .table .table-row .name {
+    width: calc(70% - 1em); }
+  .artist #events .table .table-row .location {
+    display: block;
+    width: calc(30% - 1em); } }
 
-.artist #events table tr th {
-  padding: .75em 1em; }
-
-.artist #events table tr td {
-  padding: .5em 1em; }
+@media (min-width: 768px) {
+  .artist #events .table .table-row .name {
+    width: calc(30% - 1em); }
+  .artist #events .table .table-row .location {
+    width: calc(15% - 1em); }
+  .artist #events .table .table-row .artists {
+    display: block;
+    width: calc(20% - 1em); }
+  .artist #events .table .table-row .city {
+    display: block;
+    width: calc(20% - 1em); }
+  .artist #events .table .table-row .date {
+    display: block;
+    width: calc(15% - 1em); } }
 
 .artist #main-pic img {
   margin-top: 5em; }

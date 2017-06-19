@@ -20,10 +20,6 @@
         @if (isset($events) && count($events) > 0)
             @include('common.events')
         @endif
-
-        {{--<pre>--}}
-            {{--<?php var_dump($events->toArray()) ?>--}}
-        {{--</pre>--}}
     </div>
 
 @endsection

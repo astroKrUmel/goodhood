@@ -9,7 +9,6 @@
 namespace App\Http\Controllers;
 
 use App\Artist;
-use App\Event;
 use Illuminate\Routing\Controller;
 
 class ArtistController extends Controller

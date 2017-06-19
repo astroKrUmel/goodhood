@@ -1,7 +1,12 @@
 #events {
-    table {
 
-        tr {
+    .table {
+        /// other rows
+        .table-row {
+            float: left;
+            width: 100%;
+            text-decoration: none;
+
             &:nth-child(even) {
                 background: $white;
                 color: $black;
@@ -12,31 +17,87 @@
                 color: $white;
             }
 
-            th, td {
+            &:hover {
+                opacity: .8;
+            }
+
+            span {
+                float: left;
                 text-align: left;
                 @include dynamicTextOverflow(100%);
-
-                &.facebook-link {
-                    padding: 0;
-
-                    a {
-                        float: right;
-                        background: url('/images/' + 'fb.png') no-repeat;
-                        background-size: 100% auto;
-                        height: 30px;
-                        width: 30px;
-                        text-decoration: none;
-                    }
-                }
+                padding: .5em 0 .5em .5em;
             }
 
-            th {
-                padding: .75em 1em;
+            /// single columns
+            .name {
+                width: calc(100% - 1em);
             }
 
-            td {
-                padding: .5em 1em;
+            .date,
+            .artists,
+            .city,
+            .location {
+                display: none;
             }
         }
+
+        /// head row
+        .table-head {
+            span {
+                padding: .75em 0 .75em .5em;
+                background: $grey;
+                color: $white;
+            }
+        }
+
+    }
+
+
+    @media (min-width: $bp-xs) {
+        .table .table-row {
+            .name {
+                width: calc(70% - 1em);
+            }
+
+            .location {
+                display: block;
+                width: calc(30% - 1em);
+            }
+        }
+    }
+
+    @media (min-width: $bp-sm) {
+        .table .table-row {
+            .name {
+                width: calc(30% - 1em);
+            }
+
+            .location {
+                width: calc(15% - 1em);
+            }
+
+            .artists {
+                display: block;
+                width: calc(20% - 1em);
+            }
+
+            .city {
+                display: block;
+                width: calc(20% - 1em);
+            }
+
+            .date {
+                display: block;
+                width: calc(15% - 1em);
+            }
+        }
+    }
+
+    @media (min-width: $bp-md) {
+
+    }
+
+    @media (min-width: $bp-lg) {
+
     }
 }

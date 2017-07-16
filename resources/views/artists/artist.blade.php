@@ -9,7 +9,7 @@
 
         @include('artists.mainPic')
 
-        @if (isset($artist->biography))
+        @if (!empty($artist->biography))
             @include('artists.biography')
         @endif
 
@@ -17,7 +17,7 @@
 
         @include('artists.pictureGallery')
 
-        @if (isset($events) && count($events) > 0)
+        @if (!empty($events) && count($events) > 0)
             @include('common.events')
         @endif
     </div>

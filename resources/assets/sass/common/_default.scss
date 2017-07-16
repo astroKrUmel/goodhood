@@ -54,4 +54,8 @@ a.button {
     text-align: center;
     font-size: 1.6em;
     padding: .5em 0;
+
+    &:hover {
+        opacity: .7;
+    }
 }

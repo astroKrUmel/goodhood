@@ -1,5 +1,5 @@
 <section id="biography">
-    <h3>BIOGRAPHY {{ ucfirst($artist->name) }}</h3>
+    <h3>BIOGRAPHY</h3>
 
     <p class="bio-text">
         {{$artist->biography}}

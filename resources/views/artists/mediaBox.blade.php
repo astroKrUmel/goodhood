@@ -1,10 +1,5 @@
 <section id="mediaBox">
-
-    @if(Auth::guest())
-        <a class="link press-link" href="#">Presse Download</a>
-    @endif
-
-    <a class="button button-booking" href="#">BOOKING</a>
+    <a class="button button-booking" href="mailto:<?php echo config('goodHoodMusicConfig.bookingEmail'); ?>">BOOKING</a>
 
     <div class="music-and-links">
         @if (!$tracks->isEmpty())

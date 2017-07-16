@@ -62,6 +62,8 @@ a.button {
   text-align: center;
   font-size: 1.6em;
   padding: .5em 0; }
+  a.button:hover {
+    opacity: .7; }
 
 .main-image {
   height: 10em; }
@@ -324,9 +326,6 @@ a.button {
   .artist #events .table .table-row .date {
     display: block;
     width: calc(15% - 1em); } }
-
-.artist #main-pic img {
-  margin-top: 5em; }
 
 .artist #biography .bio-text {
   font-size: 1.2em;

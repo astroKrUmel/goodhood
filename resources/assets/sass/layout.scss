@@ -1,13 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: $black;
+    background: $black-content;
     color: $white;
 
     #layout {
         float: left;
         width: 100%;
-        background: $black-content;
         margin: 0 auto;
 
         @media (min-width: $bp-sm) {

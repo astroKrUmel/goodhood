@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Artist;
 use App\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -49,5 +52,11 @@ class HomeController extends Controller
 
     public function impressum() {
         return View('impressum');
+    }
+
+    public function logout() {
+        Auth::logout();
+        Session::flush();
+        return Redirect::route('login')->with('message', 'Sie wurden ausgeloggt.');
     }
 }

@@ -10,8 +10,15 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 
 +function($) {
 
+    var $ScrollElement = $('.navigation');
+
+    // no scroll element -> no
+    if (!$ScrollElement.length) {
+        return false
+    }
+
     $('.button-arrow-down').on('click', function () {
-        $('body').animate({scrollTop: $('.navigation').position().top}, '1000');
+        $('body').animate({scrollTop: $ScrollElement.position().top}, '1000');
     });
 
 }(jQuery);

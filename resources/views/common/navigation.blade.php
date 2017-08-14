@@ -1,7 +1,7 @@
 <nav class="navigation">
     <ul class="links">
         <li class="logo">
-            <a href="/"></a>
+            <a href="/home"></a>
         </li>
         <li class="menu-mobile-button"></li>
         <li class="menu">

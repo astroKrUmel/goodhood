@@ -93,10 +93,14 @@ a.button {
       .navigation > ul > li.logo {
         float: left;
         margin: 0 1em;
-        background: url("/images/Goodhood_Logo.jpg") no-repeat;
+        background: url("/images/logos/Logo-Black-TwoRows.png") no-repeat;
         background-size: 100% auto;
+        background-position: 0 5px;
         height: 39px;
         width: 39px; }
+        .navigation > ul > li.logo a {
+          display: block;
+          height: 39px; }
       .navigation > ul > li.menu-mobile-button {
         float: right;
         margin: 0 1em;

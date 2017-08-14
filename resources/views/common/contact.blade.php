@@ -14,7 +14,6 @@
         <button type="submit">SENDEN</button>
         <span>
             *Diese Nachricht wird an den allgemeinen Verteiler „<?php echo config('goodHoodMusicConfig.bookingEmail'); ?>“ geschickt. <br>
-            Bei spezifischen Anfragen bitte an Jenny der Raik wenden.
         </span>
     </form>
 

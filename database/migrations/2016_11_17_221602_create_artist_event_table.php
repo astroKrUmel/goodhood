@@ -20,11 +20,15 @@ class CreateArtistEventTable extends Migration
 
             $table->foreign('event_id')
                 ->references('id')
-                ->on('events');
+                ->on('events')
+//                ->onDelete('cascade');
+            ;
 
             $table->foreign('artist_id')
                 ->references('id')
-                ->on('artists');
+                ->on('artists')
+//                ->onDelete('cascade');
+            ;
 
             $table->timestamps();
         });

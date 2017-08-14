@@ -17,7 +17,7 @@ class CreateArtistsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('urlName');
-            $table->string('biography')->nullalbe();
+            $table->longText('biography')->nullalbe();
             $table->string('facebookLink')->nullalbe();
             $table->string('mixcloudLink')->nullalbe();
             $table->string('link')->nullalbe();

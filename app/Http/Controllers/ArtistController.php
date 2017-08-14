@@ -10,16 +10,17 @@ namespace App\Http\Controllers;
 
 use App\Artist;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Response;
 
 class ArtistController extends Controller
 {
-    public static  function getAllArtists() {
+    public function getAllArtists() {
         $artists = Artist::all();
 
         return View('artists.allArtists', compact('artists'));
     }
 
-    public static function getArtist($name) {
+    public function getArtist($name) {
         // get artist
         $artist = Artist::where('urlName', '=', strtolower($name))->first();
 
@@ -42,5 +43,23 @@ class ArtistController extends Controller
         $tracks = $artist->mixcloundtracks();
 
         return View('artists.artist', compact('artist', 'tracks', 'events'));
+    }
+
+    public function getDownload($name) {
+        $downloadPath = storage_path() . '/' . $name .'.rar';
+
+        $download = [
+            'name' => $name,
+        ];
+
+        // ka, ob das so stimmt
+        $header = [
+            'application/x-rar-compressed'
+        ];
+
+
+//        return View('artists.download', compact('download'));
+        return response()->download(storage_path('phax.rar'), 'phax.rar');
+//        return response()->download('app/storage/phax.rar', 'phax.rar');
     }
 }

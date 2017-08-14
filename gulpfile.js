@@ -24,13 +24,13 @@ elixir(function(mix) {
         .sass('app.scss')
 
         // JS
-        //.scripts([
-        //    'frameworks/jquery.min.js',
-        //    'frameworks/bootstrap.min.js',
-        //
-        //    'app/*.js',
-        //    'app/**/*.js'
-        //], 'public/js/app.js')
+        .scripts([
+            'frameworks/jquery.min.js',
+            //'frameworks/bootstrap.min.js',
+
+            'app/*.js',
+            'app/**/*.js'
+        ], 'public/js/app.js')
     ;
 
         //.uglify(['**/*.js', '!**/*.min.js'], 'public/js', {

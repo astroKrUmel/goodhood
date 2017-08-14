@@ -1,12 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000;
+  background: #222222;
   color: #fff; }
   body #layout {
     float: left;
     width: 100%;
-    background: #222222;
     margin: 0 auto; }
     @media (min-width: 768px) {
       body #layout {
@@ -65,8 +64,18 @@ a.button {
   a.button:hover {
     opacity: .7; }
 
-.main-image {
-  height: 10em; }
+#logo {
+  margin: 0 0 1em 0;
+  width: 100%; }
+  #logo .main-image, #logo img {
+    margin: 0 auto; }
+  #logo .button-arrow-down {
+    background: url("/images/icons/arrow-down.png") no-repeat;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 2.8em;
+    height: 3em; }
 
 .navigation {
   position: relative;
@@ -355,5 +364,10 @@ a.button {
     .artist #mediaBox .music-and-links .links .link {
       float: right;
       padding: .5em; } }
+
+.artist .artist-download .button {
+  float: left;
+  width: 100%;
+  margin-top: 2em; }
 
 /*# sourceMappingURL=app.css.map */

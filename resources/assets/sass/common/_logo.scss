@@ -1,0 +1,17 @@
+#logo {
+    margin: 0 0 1em 0;
+    width: 100%;
+
+    .main-image, img{
+        margin: 0 auto;
+    }
+
+    .button-arrow-down {
+        background: url($image-directory + 'icons/arrow-down.png') no-repeat;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 2.8em;
+        height: 3em;
+    }
+}

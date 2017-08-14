@@ -9,28 +9,23 @@
 return [
 
     '0' => [
-        'name' => 'partner0',
+        'name' => 'beyond07',
         'link' => 'http://beyond07.com/'
     ],
     '1' => [
-        'name' => 'partner1',
-        'link' => 'http://9gag.com/'
+        'name' => 'newDef.jpg',
+        'link' => 'http://www.newdef.de/ '
     ],
     '2' => [
-        'name' => 'partner2',
-        'link' => 'http://beyond07.com/'
+        'name' => 'RadioAktiv2punkt0.png',
+        'link' => 'https://www.radioaktiv2punkt0.com/'
     ],
     '3' => [
-        'name' => 'partner3',
-        'link' => 'http://beyond07.com/'
+        'name' => 'BeppoSAndPeterB.png',
+        'link' => 'https://beppoundpeter.bandcamp.com/'
     ],
     '4' => [
-        'name' => 'partner4',
-        'link' => 'http://beyond07.com/'
-    ],
-    '5' => [
-        'name' => 'partner5',
-        'link' => 'http://beyond07.com/'
+        'name' => 'SharpRadio',
+        'link' => 'https://www.mixcloud.com/SharpRadio/'
     ]
-
 ];

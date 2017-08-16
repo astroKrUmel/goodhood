@@ -41,7 +41,7 @@ class HomeController extends Controller
         }
 
         // all artists
-        $artists = Artist::all();
+        $artists = Artist::where('enabled', "!=", false)->get();
         return View('home', compact('events', 'artists'));
     }
 

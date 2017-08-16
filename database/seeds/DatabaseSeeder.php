@@ -31,12 +31,13 @@ class ArtistTableSeeder extends Seeder {
         DB::table('artists')->insert(array(
             array(
                 'id'   => 1,
-                'name' => 'Gucci Ming',
-                'urlName' => 'gucci-ming',
+                'name' => 'Gvcci Ming',
+                'urlName' => 'gvcci-ming',
                 'biography' => 'Wenn Gvcci Ming an den Decks steht, verbreitet er direkt gute Laune. Seine Sets sind gefüllt mit Soon-to-be-Classics. Nach mehr als zwei Jahren DJing zählt Gucci Ming längst nicht mehr zu den Rookies im Game. Immer wieder hat er im Täubchenthal, im Conne Island in Leipzig und im Weltecho in Chemnitz bewiesen, wie sich Hip Hop und Trap Eins a verbinden lassen. Songs von Curren$y, Freddie Gibbs und A$AP Rocky sind für Gvcci Ming dabei ein Muss. ',
                 'facebookLink' => 'https://www.facebook.com/Mingi187',
                 'mixcloudLink' => '',
-                'link' => ''
+                'link' => '',
+                'enabled' => true
             ),
             array(
                 'id'   => 2,
@@ -48,7 +49,8 @@ Seine Sets variieren von klassischem Boombap gemixt mit Soul & Funk über aktuel
 ',
                 'facebookLink' => 'https://www.facebook.com/phaxinstrumentals/',
                 'mixcloudLink' => 'https://www.mixcloud.com/phax/',
-                'link' => 'https://soundcloud.com/phax'
+                'link' => 'https://soundcloud.com/phax',
+                'enabled' => true
             ),
             array(
                 'id'   => 3,
@@ -57,7 +59,8 @@ Seine Sets variieren von klassischem Boombap gemixt mit Soul & Funk über aktuel
                 'biography' => 'Mit ihrem Podcast Sharp Radio hat im Jahr 2014 alles angefangen. Seitdem konnte Jenny Sharp mit Hilfe einer Menge Support innerhalb der urbanen Clublandschaft Leipzigs, in Dresden, Chemnitz, Erfurt, Magdeburg und beim TH!NK? Festival auch live ein sicheres Händchen für erstklassige Selection beweisen. Als ehemaliges B-Girl weiß sie instinktiv, wie sich Tanzbarkeit anfühlt und kann auch selber hinterm DJ-Pult nicht still halten. Dabei bewegen sich ihre vielseitigen Sets ohne Genregrenzen von aktuellem Hip Hop über futuristische Beats zu Bass Musik, Footwork und Grime, aber auch in die elektronischere Richtung hin zu House. ',
                 'facebookLink' => 'https://www.facebook.com/sharpradi0',
                 'mixcloudLink' => 'https://www.mixcloud.com/SharpRadio/',
-                'link' => 'https://soundcloud.com/sharpradio'
+                'link' => 'https://soundcloud.com/sharpradio',
+                'enabled' => true
             ),
             array(
                 'id'   => 4,
@@ -68,7 +71,8 @@ Der Nachtschwärmer ist nicht nur DJ, sondern auch Partyveranstalter, der vor al
 ',
                 'facebookLink' => 'https://www.facebook.com/kitkutsbassroom/',
                 'mixcloudLink' => 'https://www.mixcloud.com/kitkut/',
-                'link' => 'http://www.beyond07.com/'
+                'link' => 'http://www.beyond07.com/',
+                'enabled' => true
             ),
             array(
                 'id'   => 5,
@@ -77,18 +81,20 @@ Der Nachtschwärmer ist nicht nur DJ, sondern auch Partyveranstalter, der vor al
                 'biography' => 'Alex The Kit bringt die Menge in Nullkommanix in Stimmung, was ihm bisher wiederholte Gigs in größeren Locations, wie dem Täubchenthal und Conne Island sicherte. In seiner Auswahl mag er´s düster und rough, deshalb konzentriert er sich auf Drill und bassige Halftime Beats mit New School Rap. Alex The Kit ist ein Geheimtipp mit voller Partygarantie. ',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
-                'link' => ''
+                'link' => '',
+                'enabled' => false
             ),
             array(
                 'id'   => 6,
-                'name' => 'DJ Buzz',
-                'urlName' => 'dj-buzz',
+                'name' => 'DJ Dørbystarr',
+                'urlName' => 'dj-dorbystarr',
                 'biography' => 'Es gibt so gut wie nichts, was DJ dørbystarr nicht kann oder noch nicht gemacht hat: DJ-Contest gewinnen, den Skillz Award verleihen, seinen Online-Blog namens Raputation veröffentlichen, Photographie- und DJ-Workshops geben, eine eigene Radiosendung in Erfurt senden, verschiedene Partyreihen (die WORD! CYPHER / EOW LEIPZIG, BROOKLYN ZOOOO und CITIZEN OF HIPHOP) veranstalten.
 Auch als Band-DJ von den Obskuriosen und critical.Entertainment hat er sich einen Namen gemacht. Ein Multitalent, das seine Passion schon immer der Hip-Hop-Kultur und seit mehr als 15 Jahren vor allem dem Turntableism widmet. Tunes aus deiner aktuellen Playlist laufen bei dørbys Live-Set garantiert. Boombap, Deutschrap, Ragga, Funk, Ba$$-Music und Electronica werden mit frischen Scratches gepaart in die Crowd geschossen. Dabei schafft er immer den schmalen Grat zwischen dopem Underground, originalen Crates, experimentell-urbanen Tunes und clubigen Alltime-Party-Rockern.
 ',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
-                'link' => ''
+                'link' => '',
+                'enabled' => false
             ),
             array(
                 'id'   => 7,
@@ -97,7 +103,8 @@ Auch als Band-DJ von den Obskuriosen und critical.Entertainment hat er sich eine
                 'biography' => 'Was hat Passeri mit Rap zu tun? Eine ganze Menge! Sie ist nicht nur die Kennerin der Good Hood Klik im Bereich Deutschrap und Future Beats, sondern supportet auch als Konzert-Photographin und Redakteurin des eigenen Onlinemagazins Wasrap.de seit Jahren diesen Hip Hop. Gleichzeitig entwickelte sie einen ausgefeilten, tanzbaren Stil in ihren Setlists, der zwischen pumpenden Neo-Boombap und trappy Sound problemlos wechselt.  Davon haben wir uns persönlich in der Distillery, im Conne Island und in der Alten Damenhandschufabrik überzeugen lassen.  ',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
-                'link' => 'http://wasrap.de/'
+                'link' => 'http://wasrap.de/',
+                'enabled' => true
             ),
             array(
                 'id'   => 8,
@@ -109,8 +116,19 @@ Während eher als Cuki im instrumentalen Hip Hop zu verorten ist, legt es Electr
 ',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
-                'link' => ''
+                'link' => '',
+                'enabled' => true
             ),
+//            array(
+//                'id'   => 9,
+//                'name' => 'DJ Buzz',
+//                'urlName' => 'dj-buzz',
+//                'biography' => '',
+//                'facebookLink' => '',
+//                'mixcloudLink' => '',
+//                'link' => '',
+//                'enabled' => true
+//            ),
 
         ));
     }

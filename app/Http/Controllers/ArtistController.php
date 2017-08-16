@@ -22,9 +22,12 @@ class ArtistController extends Controller
 
     public function getArtist($name) {
         // get artist
-        $artist = Artist::where('urlName', '=', strtolower($name))->first();
+        $artist = Artist
+            ::where('urlName', '=', strtolower($name))
+            ->where('enabled', "!=", false)
+            ->first();
 
-        if ($artist === null) {
+        if (count($artist) <= 0 || $artist === null) {
             return Redirect()->action('HomeController@index');
         }
 

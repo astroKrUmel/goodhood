@@ -5,22 +5,20 @@
 // bootstrap
 //@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-// all variables
+/// all variables
 @import "variables";
 
-// complete layout
+/// complete layout
 @import "layout";
 
-// helper
+/// helper
 @import "helper/helper";
 
-// common/default styling
+/// common/default styling
 @import "common/common";
 
-.home {
-    @import "home/home";
-}
+/// home page ( / or /home)
+@import "home/home";
 
-.artist {
-    @import "artists/artist";
-}
+/// artists page ( /artist/{name})
+@import "artists/artist";

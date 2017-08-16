@@ -197,19 +197,19 @@ a.button {
       .picture-collection:nth-of-type(3n+3) {
         margin: 0.5em 0 0.5em 0.5em; } }
 
-.home #events .table .table-row {
+#events .table .table-row {
   float: left;
   width: 100%;
   text-decoration: none; }
-  .home #events .table .table-row:nth-child(even) {
+  #events .table .table-row:nth-child(even) {
     background: #fff;
     color: #000; }
-  .home #events .table .table-row:nth-child(odd) {
+  #events .table .table-row:nth-child(odd) {
     background: #8E8E8E;
     color: #fff; }
-  .home #events .table .table-row:hover {
+  #events .table .table-row:hover {
     opacity: .8; }
-  .home #events .table .table-row span {
+  #events .table .table-row span {
     float: left;
     text-align: left;
     overflow: hidden;
@@ -218,158 +218,102 @@ a.button {
     max-width: 100%;
     padding-right: .25em;
     padding: .5em 0 .5em .5em; }
-  .home #events .table .table-row .name {
+  #events .table .table-row .name {
     width: calc(100% - 1em); }
-  .home #events .table .table-row .date,
-  .home #events .table .table-row .artists,
-  .home #events .table .table-row .city,
-  .home #events .table .table-row .location {
+  #events .table .table-row .date,
+  #events .table .table-row .artists,
+  #events .table .table-row .city,
+  #events .table .table-row .location {
     display: none; }
 
-.home #events .table .table-head span {
+#events .table .table-head span {
   padding: .75em 0 .75em .5em;
   background: #8E8E8E;
   color: #fff; }
 
 @media (min-width: 480px) {
-  .home #events .table .table-row .name {
+  #events .table .table-row .name {
     width: calc(70% - 1em); }
-  .home #events .table .table-row .location {
+  #events .table .table-row .location {
     display: block;
     width: calc(30% - 1em); } }
 
 @media (min-width: 768px) {
-  .home #events .table .table-row .name {
+  #events .table .table-row .name {
     width: calc(30% - 1em); }
-  .home #events .table .table-row .location {
+  #events .table .table-row .location {
     width: calc(15% - 1em); }
-  .home #events .table .table-row .artists {
+  #events .table .table-row .artists {
     display: block;
     width: calc(20% - 1em); }
-  .home #events .table .table-row .city {
+  #events .table .table-row .city {
     display: block;
     width: calc(20% - 1em); }
-  .home #events .table .table-row .date {
+  #events .table .table-row .date {
     display: block;
     width: calc(15% - 1em); } }
 
-.home #artists h2.sub-headline {
+#artists h2.sub-headline {
   margin-bottom: .5em; }
 
-.home #contact form {
+#contact form {
   margin: 0 auto;
   max-width: 450px; }
 
-.home #contact label {
+#contact label {
   float: left;
   font-weight: bold;
   color: #fff;
   padding: 1em 0 .1em 0; }
 
-.home #contact input {
+#contact input {
   width: calc(100% - 2em);
   padding: .5em 1em; }
 
-.home #contact textarea {
+#contact textarea {
   width: calc(100% - 2em);
   padding: 1em; }
 
-.home #contact button {
+#contact button {
   width: calc(100% + 1px);
   padding: .5em 1em;
   font-weight: bold; }
 
-.home #contact span {
+#contact span {
   float: left;
   color: #fff;
   padding: 1em 0; }
 
-.artist #events .table .table-row {
-  float: left;
-  width: 100%;
-  text-decoration: none; }
-  .artist #events .table .table-row:nth-child(even) {
-    background: #fff;
-    color: #000; }
-  .artist #events .table .table-row:nth-child(odd) {
-    background: #8E8E8E;
-    color: #fff; }
-  .artist #events .table .table-row:hover {
-    opacity: .8; }
-  .artist #events .table .table-row span {
-    float: left;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 100%;
-    padding-right: .25em;
-    padding: .5em 0 .5em .5em; }
-  .artist #events .table .table-row .name {
-    width: calc(100% - 1em); }
-  .artist #events .table .table-row .date,
-  .artist #events .table .table-row .artists,
-  .artist #events .table .table-row .city,
-  .artist #events .table .table-row .location {
-    display: none; }
-
-.artist #events .table .table-head span {
-  padding: .75em 0 .75em .5em;
-  background: #8E8E8E;
-  color: #fff; }
-
-@media (min-width: 480px) {
-  .artist #events .table .table-row .name {
-    width: calc(70% - 1em); }
-  .artist #events .table .table-row .location {
-    display: block;
-    width: calc(30% - 1em); } }
-
-@media (min-width: 768px) {
-  .artist #events .table .table-row .name {
-    width: calc(30% - 1em); }
-  .artist #events .table .table-row .location {
-    width: calc(15% - 1em); }
-  .artist #events .table .table-row .artists {
-    display: block;
-    width: calc(20% - 1em); }
-  .artist #events .table .table-row .city {
-    display: block;
-    width: calc(20% - 1em); }
-  .artist #events .table .table-row .date {
-    display: block;
-    width: calc(15% - 1em); } }
-
-.artist #biography .bio-text {
+#biography .bio-text {
   font-size: 1.2em;
   line-height: 1.2em; }
 
-.artist #mediaBox .press-link {
+#mediaBox .press-link {
   float: right;
   margin: .5em 0; }
 
-.artist #mediaBox .button {
+#mediaBox .button {
   float: left;
   width: 100%; }
 
-.artist #mediaBox .music-and-links {
+#mediaBox .music-and-links {
   float: left;
   width: 100%;
   margin: 2em 0; }
 
 @media (min-width: 768px) {
-  .artist #mediaBox .music-and-links .music, .artist #mediaBox .music-and-links .links {
+  #mediaBox .music-and-links .music, #mediaBox .music-and-links .links {
     float: left;
     width: calc(50% - .5em); }
-  .artist #mediaBox .music-and-links .music {
+  #mediaBox .music-and-links .music {
     padding-right: 1em; }
-  .artist #mediaBox .music-and-links .links {
+  #mediaBox .music-and-links .links {
     float: right; }
-    .artist #mediaBox .music-and-links .links .link {
+    #mediaBox .music-and-links .links .link {
       float: right;
       padding: .5em; } }
 
-.artist .artist-download .button {
+.artist-download .button {
   float: left;
   width: 100%;
   margin-top: 2em; }

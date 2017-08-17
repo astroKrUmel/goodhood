@@ -1,6 +1,7 @@
 #logo {
     margin: 0 0 1em 0;
     width: 100%;
+    cursor: pointer;
 
     .main-image, img{
         margin: 0 auto;
@@ -8,10 +9,10 @@
 
     .button-arrow-down {
         background: url($image-directory + 'icons/arrow-down.png') no-repeat;
-        cursor: pointer;
+        background-size: 100%;
         display: block;
         margin: 0 auto;
-        width: 2.8em;
-        height: 3em;
+        width: 1.4em;
+        height: 1.5em;
     }
 }

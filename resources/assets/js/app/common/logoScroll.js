@@ -12,7 +12,7 @@
         return false
     }
 
-    $('.button-arrow-down').on('click', function () {
+    $('section#logo').on('click', function () {
         $('body').animate({scrollTop: $ScrollElement.position().top}, '1000');
     });
 

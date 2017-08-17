@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: #222222;
-  color: #fff; }
+  color: #fff;
+  font-family: 'Open Sans', sans-serif; }
   body #layout {
     float: left;
     width: 100%;
@@ -66,16 +67,17 @@ a.button {
 
 #logo {
   margin: 0 0 1em 0;
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
   #logo .main-image, #logo img {
     margin: 0 auto; }
   #logo .button-arrow-down {
     background: url("/images/icons/arrow-down.png") no-repeat;
-    cursor: pointer;
+    background-size: 100%;
     display: block;
     margin: 0 auto;
-    width: 2.8em;
-    height: 3em; }
+    width: 1.4em;
+    height: 1.5em; }
 
 .navigation {
   position: relative;

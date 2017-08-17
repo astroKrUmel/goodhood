@@ -17,7 +17,7 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
         return false
     }
 
-    $('.button-arrow-down').on('click', function () {
+    $('section#logo').on('click', function () {
         $('body').animate({scrollTop: $ScrollElement.position().top}, '1000');
     });
 

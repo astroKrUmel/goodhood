@@ -24,13 +24,13 @@ body {
 
 .icon.icon-facebook {
   background: url("/images/icons/facebook.png") no-repeat;
-  width: 3.5em;
-  height: 4em; }
+  width: 3em;
+  height: 2.5em; }
 
 .icon.icon-mixcloud {
   background: url("/images/icons/mixcloud.png") no-repeat;
   width: 5.5em;
-  height: 4em; }
+  height: 2.5em; }
 
 section {
   margin: 0 1.5em;
@@ -312,8 +312,10 @@ a.button {
   width: 100%;
   margin: 2em 0; }
   #mediaBox .music-and-links .links {
-    display: table;
-    margin: 0 auto; }
+    margin-top: 1em; }
+  #mediaBox .music-and-links .direct-link {
+    display: block;
+    word-wrap: break-word; }
 
 @media (min-width: 768px) {
   #mediaBox .music-and-links .music, #mediaBox .music-and-links .links {
@@ -322,9 +324,19 @@ a.button {
   #mediaBox .music-and-links .music {
     padding-right: 1em; }
   #mediaBox .music-and-links .links {
-    float: right; }
+    float: right;
+    margin-top: 0; }
     #mediaBox .music-and-links .links .link {
-      float: right; } }
+      float: right; }
+    #mediaBox .music-and-links .links .icon {
+      background-size: 80%; }
+    #mediaBox .music-and-links .links .icon-mixcloud {
+      width: 5em; }
+  #mediaBox .music-and-links .direct-link {
+    margin-top: -.5em;
+    font-size: 1em;
+    text-align: right;
+    width: 100%; } }
 
 .artist-download .button {
   float: left;

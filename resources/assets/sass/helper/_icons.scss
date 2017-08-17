@@ -4,13 +4,15 @@
 
 
 .icon.icon-facebook {
+    //content: '';
     background: url($image-directory + 'icons/facebook.png') no-repeat;
-    width: 3.5em;
-    height: 4em;
+    width: 3em;
+    height: 2.5em;
 }
 
 .icon.icon-mixcloud {
+    //content: '';
     background: url($image-directory + 'icons/mixcloud.png') no-repeat;
     width: 5.5em;
-    height: 4em;
+    height: 2.5em;
 }

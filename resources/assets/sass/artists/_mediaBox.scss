@@ -11,8 +11,12 @@
         margin: 2em 0;
 
         .links {
-            display: table;
-            margin: 0 auto;
+            margin-top: 1em;
+        }
+
+        .direct-link {
+            display: block;
+            word-wrap: break-word;
         }
     }
     
@@ -30,10 +34,26 @@
 
             .links {
                 float: right;
+                margin-top: 0;
 
                 .link {
                     float: right;
                 }
+
+                .icon {
+                    background-size: 80%;
+                }
+
+                .icon-mixcloud {
+                    width: 5em;
+                }
+            }
+
+            .direct-link {
+                margin-top: -.5em;
+                font-size: 1em;
+                text-align: right;
+                width: 100%;
             }
         }
     }

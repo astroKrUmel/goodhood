@@ -14,11 +14,6 @@ use Illuminate\Support\Facades\Response;
 
 class ArtistController extends Controller
 {
-    public function getAllArtists() {
-        $artists = Artist::all();
-
-        return View('artists.allArtists', compact('artists'));
-    }
 
     public function getArtist($name) {
         // get artist
@@ -28,7 +23,7 @@ class ArtistController extends Controller
             ->first();
 
         if (count($artist) <= 0 || $artist === null) {
-            return Redirect()->action('HomeController@index');
+            return redirect()->action('HomeController@index');
         }
 
         // get his own events

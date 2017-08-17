@@ -20,7 +20,6 @@ Route::get('/', ['uses' => 'HomeController@index']);
 Route::get('/home', ['uses' => 'HomeController@index']);
 
 // ARTISTS
-Route::get('artists', ['uses' => 'ArtistController@getAllArtists']);
 Route::get('artist/{name}', ['uses' => 'ArtistController@getArtist']);
 Route::get('artist/{name}/download', ['uses' => 'ArtistController@getDownload']);
 

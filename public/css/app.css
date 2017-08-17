@@ -19,6 +19,19 @@ body {
   body ul, body li {
     list-style-type: none; }
 
+.icon {
+  display: inline-block; }
+
+.icon.icon-facebook {
+  background: url("/images/icons/facebook.png") no-repeat;
+  width: 3.5em;
+  height: 4em; }
+
+.icon.icon-mixcloud {
+  background: url("/images/icons/mixcloud.png") no-repeat;
+  width: 5.5em;
+  height: 4em; }
+
 section {
   margin: 0 1.5em;
   float: left;
@@ -290,10 +303,6 @@ a.button {
   font-size: 1.2em;
   line-height: 1.2em; }
 
-#mediaBox .press-link {
-  float: right;
-  margin: .5em 0; }
-
 #mediaBox .button {
   float: left;
   width: 100%; }
@@ -302,6 +311,9 @@ a.button {
   float: left;
   width: 100%;
   margin: 2em 0; }
+  #mediaBox .music-and-links .links {
+    display: table;
+    margin: 0 auto; }
 
 @media (min-width: 768px) {
   #mediaBox .music-and-links .music, #mediaBox .music-and-links .links {
@@ -312,8 +324,7 @@ a.button {
   #mediaBox .music-and-links .links {
     float: right; }
     #mediaBox .music-and-links .links .link {
-      float: right;
-      padding: .5em; } }
+      float: right; } }
 
 .artist-download .button {
   float: left;

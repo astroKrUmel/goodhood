@@ -1,8 +1,4 @@
 #mediaBox {
-    .press-link {
-        float: right;
-        margin: .5em 0;
-    }
 
     .button {
         float: left;
@@ -13,6 +9,11 @@
         float: left;
         width: 100%;
         margin: 2em 0;
+
+        .links {
+            display: table;
+            margin: 0 auto;
+        }
     }
     
     @media (min-width: $bp-sm) {
@@ -32,7 +33,6 @@
 
                 .link {
                     float: right;
-                    padding: .5em;
                 }
             }
         }

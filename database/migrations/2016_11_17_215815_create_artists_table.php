@@ -20,6 +20,7 @@ class CreateArtistsTable extends Migration
             $table->longText('biography')->nullalbe();
             $table->string('facebookLink')->nullalbe();
             $table->string('mixcloudLink')->nullalbe();
+            $table->string('instagramLink')->nullalbe();
             $table->string('link')->nullalbe();
             $table->boolean('enabled');
             $table->timestamps();

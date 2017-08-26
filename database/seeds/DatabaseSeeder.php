@@ -42,6 +42,7 @@ Gibbs und A$AP Rocky sind für Gvcci Ming dabei ein Muss. Gvcci Ming ist ein
 Geheimtipp mit voller Partygarantie.',
                 'facebookLink' => 'https://www.facebook.com/Mingi187',
                 'mixcloudLink' => '',
+                'instagramLink' => '',
                 'link' => '',
                 'enabled' => true
             ),
@@ -62,6 +63,7 @@ Seine Sets variieren von klassischem Boombap gemixt mit Soul &amp; Funk über
 aktuellere 2.0 Sounds á la araabMUZIK bis zu hartem Gangstertrap.',
                 'facebookLink' => 'https://www.facebook.com/phaxinstrumentals/',
                 'mixcloudLink' => 'https://www.mixcloud.com/phax/',
+                'instagramLink' => '',
                 'link' => 'https://soundcloud.com/phax',
                 'enabled' => true
             ),
@@ -79,6 +81,7 @@ futuristische Beats zu Bass Musik, Footwork und Grime, aber auch in die
 elektronischere Richtung hin zu House.',
                 'facebookLink' => 'https://www.facebook.com/sharpradi0',
                 'mixcloudLink' => 'https://www.mixcloud.com/SharpRadio/',
+                'instagramLink' => '',
                 'link' => 'https://soundcloud.com/sharpradio',
                 'enabled' => true
             ),
@@ -98,6 +101,7 @@ auch auf Trap. Egal wo, das Publikum liebt ihn, weil er zusammen mit den Leuten
 ausrastet und selbst aus der letzten Kellersause eine krasse Party macht.',
                 'facebookLink' => 'https://www.facebook.com/kitkutsbassroom/',
                 'mixcloudLink' => 'https://www.mixcloud.com/kitkut/',
+                'instagramLink' => 'https://www.instagram.com/explore/tags/kitkut/',
                 'link' => 'http://www.beyond07.com/',
                 'enabled' => true
             ),
@@ -108,6 +112,7 @@ ausrastet und selbst aus der letzten Kellersause eine krasse Party macht.',
                 'biography' => 'Alex The Kit bringt die Menge in Nullkommanix in Stimmung, was ihm bisher wiederholte Gigs in größeren Locations, wie dem Täubchenthal und Conne Island sicherte. In seiner Auswahl mag er´s düster und rough, deshalb konzentriert er sich auf Drill und bassige Halftime Beats mit New School Rap. Alex The Kit ist ein Geheimtipp mit voller Partygarantie. ',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
+                'instagramLink' => '',
                 'link' => '',
                 'enabled' => false
             ),
@@ -120,6 +125,7 @@ Auch als Band-DJ von den Obskuriosen und critical.Entertainment hat er sich eine
 ',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
+                'instagramLink' => '',
                 'link' => '',
                 'enabled' => false
             ),
@@ -137,6 +143,7 @@ in der Distillery, im Conne Island und in der Alten Damenhandschufabrik überzeu
 lassen.',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
+                'instagramLink' => '',
                 'link' => 'http://wasrap.de/',
                 'enabled' => true
             ),
@@ -152,6 +159,7 @@ setzen. Ansonsten lässt er dann lieber seine Musik für sich sprechen.',
 
                 'facebookLink' => '',
                 'mixcloudLink' => '',
+                'instagramLink' => '',
                 'link' => '',
                 'enabled' => true
             ),
@@ -168,6 +176,7 @@ Autotune von den Decks vertreiben. Smoothe Hip Hop Klassiker gepaart mit New
 School Sound bringen wieder Leben auf die Tanzfläche.',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
+                'instagramLink' => '',
                 'link' => '',
                 'enabled' => true
             ),

@@ -3,6 +3,8 @@
 @section('content')
     <div class="home">
 
+        @include('home.startpageOverlay')
+
         @include('common.logo')
 
         @if(!empty($message))
@@ -23,6 +25,5 @@
 
         @include('common.contact')
 
-        {{--    @include('common.impressum')--}}
     </div>
 @endsection

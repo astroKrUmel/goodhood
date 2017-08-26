@@ -11,6 +11,7 @@
         margin: 2em 0;
 
         .links {
+            display: inline-block;
             margin-top: 1em;
         }
 
@@ -19,6 +20,7 @@
             word-wrap: break-word;
         }
     }
+
     
     @media (min-width: $bp-sm) {
         .music-and-links {
@@ -34,7 +36,7 @@
 
             .links {
                 float: right;
-                margin-top: 0;
+                //margin-top: 0;
 
                 .link {
                     float: right;

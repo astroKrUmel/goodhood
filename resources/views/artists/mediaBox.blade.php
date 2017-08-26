@@ -6,6 +6,7 @@
         @endif
 
         {{--{{$artist}}--}}
+        <a href="mailto:{{config('goodHoodMusicConfig.bookingEmail')}}" class="button button-booking">BOOKING</a>
 
         <div class="links">
             @if (strlen($artist->facebookLink) > 0)

@@ -26,7 +26,7 @@ elixir(function(mix) {
         // JS
         .scripts([
             'frameworks/jquery.min.js',
-            //'frameworks/bootstrap.min.js',
+            'frameworks/jquery.cookie.js',
 
             'app/*.js',
             'app/**/*.js'

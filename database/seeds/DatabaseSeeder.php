@@ -33,7 +33,13 @@ class ArtistTableSeeder extends Seeder {
                 'id'   => 1,
                 'name' => 'Gvcci Ming',
                 'urlName' => 'gvcci-ming',
-                'biography' => 'Wenn Gvcci Ming an den Decks steht, verbreitet er direkt gute Laune. Seine Sets sind gefüllt mit Soon-to-be-Classics. Nach mehr als zwei Jahren DJing zählt Gucci Ming längst nicht mehr zu den Rookies im Game. Immer wieder hat er im Täubchenthal, im Conne Island in Leipzig und im Weltecho in Chemnitz bewiesen, wie sich Hip Hop und Trap Eins a verbinden lassen. Songs von Curren$y, Freddie Gibbs und A$AP Rocky sind für Gvcci Ming dabei ein Muss. ',
+                'biography' => 'Wenn Gvcci Ming an den Decks steht, verbreitet er direkt gute Laune. Seine Sets
+sind gefüllt mit Soon-to- be-Classics. Nach mehr als zwei Jahren DJing zählt Gucci
+Ming längst nicht mehr zu den Rookies im Game. Immer wieder hat er im
+Täubchenthal, im Conne Island in Leipzig und im Weltecho in Chemnitz bewiesen,
+wie sich Hip Hop und Trap Eins a verbinden lassen. Songs von Curren$y, Freddie
+Gibbs und A$AP Rocky sind für Gvcci Ming dabei ein Muss. Gvcci Ming ist ein
+Geheimtipp mit voller Partygarantie.',
                 'facebookLink' => 'https://www.facebook.com/Mingi187',
                 'mixcloudLink' => '',
                 'link' => '',
@@ -43,10 +49,17 @@ class ArtistTableSeeder extends Seeder {
                 'id'   => 2,
                 'name' => 'Phax',
                 'urlName' => 'phax',
-                'biography' => 'Phax ist ein Allroundtalent: Scratch-Experte, Beatmaker, früher auch Tour-DJ für 724 Goodfellas. Seine ausgefeilten Scratches bereichern schon 2009 den deutsch-französischen Sampler „La Connexion“ mit Größen wie Akhenaton, Haftbefehl, Azad und Kool Savas. Er schraubte in der Vergangenheit Beats für Freeman und Tone, die damals auf Juice-CDs releast wurden.
-Während seiner langjährigen DJ-Vita unterstützte er amerikanische und deutsche Künstler, darunter Group Home, Defari, Jeru The Damaja, Lords Of The Underground, Kev Brown, DJ Babu, K.I.Z., Plusmacher, Schaufel & Spaten, T9 (Torky Tork & Doz9), Morlockk Dilemma, Hiob und Omik K.
-Seine Sets variieren von klassischem Boombap gemixt mit Soul & Funk über aktuellere 2.0 Sounds á la araabMUZIK bis zu hartem Gangstertrap.
-',
+                'biography' => 'Phax ist ein Allroundtalent: Scratch-Experte, Beatmaker, früher auch Tour-DJ für 724
+Goodfellas. Seine ausgefeilten Scratches bereichern schon 2009 den deutsch-
+französischen Sampler „La Connexion“ mit Größen wie Akhenaton, Haftbefehl, Azad
+und Kool Savas. Er schraubte in der Vergangenheit Beats für Freeman und Tone, die
+damals auf Juice-CDs releast wurden.
+Während seiner langjährigen DJ-Vita unterstützte er amerikanische und deutsche
+Künstler, darunter Group Home, Defari, Jeru The Damaja, Lords Of The
+Underground, Kev Brown, DJ Babu, K.I.Z., Plusmacher, Schaufel &amp; Spaten, T9
+(Torky Tork &amp; Doz9), Morlockk Dilemma, Hiob und Omik K.
+Seine Sets variieren von klassischem Boombap gemixt mit Soul &amp; Funk über
+aktuellere 2.0 Sounds á la araabMUZIK bis zu hartem Gangstertrap.',
                 'facebookLink' => 'https://www.facebook.com/phaxinstrumentals/',
                 'mixcloudLink' => 'https://www.mixcloud.com/phax/',
                 'link' => 'https://soundcloud.com/phax',
@@ -56,7 +69,14 @@ Seine Sets variieren von klassischem Boombap gemixt mit Soul & Funk über aktuel
                 'id'   => 3,
                 'name' => 'Jenny Sharp',
                 'urlName' => 'jenny-sharp',
-                'biography' => 'Mit ihrem Podcast Sharp Radio hat im Jahr 2014 alles angefangen. Seitdem konnte Jenny Sharp mit Hilfe einer Menge Support innerhalb der urbanen Clublandschaft Leipzigs, in Dresden, Chemnitz, Erfurt, Magdeburg und beim TH!NK? Festival auch live ein sicheres Händchen für erstklassige Selection beweisen. Als ehemaliges B-Girl weiß sie instinktiv, wie sich Tanzbarkeit anfühlt und kann auch selber hinterm DJ-Pult nicht still halten. Dabei bewegen sich ihre vielseitigen Sets ohne Genregrenzen von aktuellem Hip Hop über futuristische Beats zu Bass Musik, Footwork und Grime, aber auch in die elektronischere Richtung hin zu House. ',
+                'biography' => 'Mit ihrem Podcast Sharp Radio hat im Jahr 2014 alles angefangen. Seitdem konnte
+Jenny Sharp mit Hilfe einer Menge Support innerhalb der urbanen Clublandschaft im
+Osten Deutschlands und beim TH!NK? Festival auch live ein sicheres Händchen für
+erstklassige Selection beweisen. Als ehemaliges B-Girl weiß sie instinktiv, wie sich
+Tanzbarkeit anfühlt und kann auch selber hinterm DJ-Pult nicht still halten. Dabei
+bewegen sich ihre vielseitigen Sets ohne Genregrenzen von aktuellem Hip Hop über
+futuristische Beats zu Bass Musik, Footwork und Grime, aber auch in die
+elektronischere Richtung hin zu House.',
                 'facebookLink' => 'https://www.facebook.com/sharpradi0',
                 'mixcloudLink' => 'https://www.mixcloud.com/SharpRadio/',
                 'link' => 'https://soundcloud.com/sharpradio',
@@ -66,9 +86,16 @@ Seine Sets variieren von klassischem Boombap gemixt mit Soul & Funk über aktuel
                 'id'   => 4,
                 'name' => 'KitKut',
                 'urlName' => 'kitkut',
-                'biography' => 'Deutschlandweit und international hat sich KITKUT in seiner 12jährigen DJ-Karriere mit ausgelassenen Shows zum Vollblutentertainer entwickelt. So stand er bereits unter anderem mit Kid Fresh, DJ Rafik, Eskei83, den Round Table Knights und den Cyperpunkers auf der Bühne. Außerdem spielte er Support für Deutsch-Rap-Größen, wie KIZ, SXTN, MC Bomber, Prinz Pi und und und...
-Der Nachtschwärmer ist nicht nur DJ, sondern auch Partyveranstalter, der vor allem in seinem Element ist, wenn er an den Wheels Of Steel steht. Ursprünglich im Rap der 90er Jahre und UK Grime verwurzelt spezialisiert er sich seit einigen Jahren auch auf Trap. Egal wo, das Publikum liebt ihn, weil er zusammen mit den Leuten ausrastet und selbst aus der letzten Kellersause eine krasse Party macht.
-',
+                'biography' => 'Deutschlandweit und international hat sich KITKUT in seiner 12jährigen DJ-Karriere
+mit ausgelassenen Shows zum Vollblutentertainer entwickelt. So stand er bereits
+unter anderem mit Kid Fresh, DJ Rafik, Eskei83, den Round Table Knights und den
+Cyperpunkers auf der Bühne. Außerdem spielte er Support für Deutsch-Rap- Größen,
+wie KIZ, SXTN, MC Bomber, Prinz Pi und und und...
+Der Nachtschwärmer ist nicht nur DJ, sondern auch Partyveranstalter, der vor allem
+in seinem Element ist, wenn er an den Wheels Of Steel steht. Ursprünglich im Rap
+der 90er Jahre und UK Grime verwurzelt spezialisiert er sich seit einigen Jahren
+auch auf Trap. Egal wo, das Publikum liebt ihn, weil er zusammen mit den Leuten
+ausrastet und selbst aus der letzten Kellersause eine krasse Party macht.',
                 'facebookLink' => 'https://www.facebook.com/kitkutsbassroom/',
                 'mixcloudLink' => 'https://www.mixcloud.com/kitkut/',
                 'link' => 'http://www.beyond07.com/',
@@ -100,7 +127,14 @@ Auch als Band-DJ von den Obskuriosen und critical.Entertainment hat er sich eine
                 'id'   => 7,
                 'name' => 'Passerie',
                 'urlName' => 'passerie',
-                'biography' => 'Was hat Passeri mit Rap zu tun? Eine ganze Menge! Sie ist nicht nur die Kennerin der Good Hood Klik im Bereich Deutschrap und Future Beats, sondern supportet auch als Konzert-Photographin und Redakteurin des eigenen Onlinemagazins Wasrap.de seit Jahren diesen Hip Hop. Gleichzeitig entwickelte sie einen ausgefeilten, tanzbaren Stil in ihren Setlists, der zwischen pumpenden Neo-Boombap und trappy Sound problemlos wechselt.  Davon haben wir uns persönlich in der Distillery, im Conne Island und in der Alten Damenhandschufabrik überzeugen lassen.  ',
+                'biography' => 'Was hat Passeri mit Rap zu tun? Eine ganze Menge! Sie ist nicht nur die Kennerin
+der Good Hood Klik im Bereich Deutschrap und Future Beats, sondern supportet
+auch als Konzert-Photographin und Redakteurin des eigenen Onlinemagazins
+Wasrap.de seit Jahren diesen Hip Hop. Gleichzeitig entwickelte sie einen
+ausgefeilten, tanzbaren Stil in ihren Setlists, der zwischen pumpenden Neo-
+Boombap und trappy Sound problemlos wechselt. Davon haben wir uns persönlich
+in der Distillery, im Conne Island und in der Alten Damenhandschufabrik überzeugen
+lassen.',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
                 'link' => 'http://wasrap.de/',
@@ -110,25 +144,33 @@ Auch als Band-DJ von den Obskuriosen und critical.Entertainment hat er sich eine
                 'id'   => 8,
                 'name' => 'Goodkat',
                 'urlName' => 'goodkat',
-                'biography' => 'Als Cuki ist er einer der meist unterschätzten Produzenten des deutschen Beat-Untergrunds. Dass er sich für dieses Alias selbst Klavier- und Gitarrespielen beigebracht hat, zeigt wie unfassbar musikalisch er ist. Auch weiß er nach 10 Sekunden die BPM und Tonart eines jeden Tracks. Er remixt und produziert Songs, die einfach Hits sind und auf jeder Party funktionieren. In seinem DJ-Life ist er als Gimmix für das Label Audiolith (Hamburg) erfolgreich durchs Land getourt und hat Clubs wie das ??? beehrt /  hat dabei unter anderem Krink, Rampue und ???  unterstützt.
-Als Goodkat spezialisiert er sich auf Bass, Footwork, Juke und Drum´n´Bass.
-Während eher als Cuki im instrumentalen Hip Hop zu verorten ist, legt es Electronica, Bass, Future Beats, Footwork und House sind sein Faible/seine Spezialität, die er easy miteinander mixt.
-',
+                'biography' => 'Goodkat ist das neue Alias von Gimmix aus Leipzig, welcher sich musikalisch
+irgendwo zwischen Rap, Footwork und Future Bass einfindet. Als Teil der Stiff Little
+Spinners Crew releaste er in den letzten Jahren regelmäßig auf Audiolith Musik um
+die 120BPM. Mit Goodkat versucht er nun als DJ und Produzent neue Akzente zu
+setzen. Ansonsten lässt er dann lieber seine Musik für sich sprechen.',
+
                 'facebookLink' => '',
                 'mixcloudLink' => '',
                 'link' => '',
                 'enabled' => true
             ),
-//            array(
-//                'id'   => 9,
-//                'name' => 'DJ Buzz',
-//                'urlName' => 'dj-buzz',
-//                'biography' => '',
-//                'facebookLink' => '',
-//                'mixcloudLink' => '',
-//                'link' => '',
-//                'enabled' => true
-//            ),
+            array(
+                'id'   => 9,
+                'name' => 'AR-P',
+                'urlName' => 'ar-p',
+                'biography' => 'Egal ob Gangsterrap oder Saturday Night Car Tunes, AR-P hat immer den
+passenden Track parat. Alte Schule und Neue Schule mixt er so, dass jeder Head
+am Nicken ist. Dabei nutzt er unter anderem die Einflüsse von Künstlern wie Run
+
+The Jewels, Danny Brown, Notorious B.I.G. und Non Phixion, welche direkt den
+Autotune von den Decks vertreiben. Smoothe Hip Hop Klassiker gepaart mit New
+School Sound bringen wieder Leben auf die Tanzfläche.',
+                'facebookLink' => '',
+                'mixcloudLink' => '',
+                'link' => '',
+                'enabled' => true
+            ),
 
         ));
     }

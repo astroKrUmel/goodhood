@@ -231,30 +231,6 @@ class MixCloudTracksSeeder extends Seeder {
     }
 }
 
-class PicturesTableSeeder extends Seeder {
-    public function run() {
-        DB::table('pictures')->insert([
-            [
-                'id' => 1,
-                'modus' => 'main',
-                'picture' => file_get_contents('public/images/artists/gucci-ming.svg')
-            ]
-        ]);
-    }
-}
-
-class ArtistsPicturesTableSeeder extends Seeder {
-    public function run() {
-        DB::table('artists_pictures')->insert([
-            [
-                'id' => 1,
-                'artist_id' => 1,
-                'picture_id' => 1
-            ]
-        ]);
-    }
-}
-
 
 class ArtistEventTableSeeder extends Seeder {
     public function run() {

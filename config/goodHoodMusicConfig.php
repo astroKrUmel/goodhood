@@ -10,5 +10,6 @@ return [
         'dj-dorbystarr'                 => 6,
         'passerie'                      => 7,
         'goodkat'                       => 8,
+        'ar-p'                          => 9,
     ],
 ];

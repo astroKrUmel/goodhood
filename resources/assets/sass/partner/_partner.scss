@@ -1,0 +1,32 @@
+#partner {
+
+    .partner-content {
+        float: left;
+        width: 100%;
+        background: $white;
+    }
+
+
+    @media (min-width: $bp-xs) {
+        .partner-content {
+
+            .partner-element {
+                position: relative;
+                height: 350px;
+
+                img {
+                    margin: auto;
+                    max-height: 100%;
+                    max-width: 100%;
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

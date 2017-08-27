@@ -11,8 +11,11 @@
 /// common/default styling
 @import "common/common";
 
-/// home page ( / or /home)
+/// home page ( / or /home )
 @import "home/home";
 
-/// artists page ( /artist/{name})
+/// artists page ( /artist/{name} )
 @import "artists/artist";
+
+/// partner page ( /partner )
+@import "partner/partner";

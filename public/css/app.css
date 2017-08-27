@@ -31,23 +31,33 @@ body ul, body li {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .icon {
   display: inline-block;
+  cursor: pointer;
 }
 
 .icon.icon-facebook {
   background: url("/images/icons/facebook.png") no-repeat;
-  width: 3em;
-  height: 2.5em;
+  background-position: 0 -7px;
+  width: 50px;
+  height: 50px;
 }
 
 .icon.icon-mixcloud {
   background: url("/images/icons/mixcloud.png") no-repeat;
-  width: 5.5em;
-  height: 2.5em;
+  background-position: 0 3px;
+  width: 80px;
+  height: 50px;
+}
+
+.icon.icon-instagram {
+  background: url("/images/icons/instagram.png") no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
 }
 
 section {
@@ -470,6 +480,10 @@ a.button:hover {
   margin-top: 1em;
 }
 
+#mediaBox .music-and-links .links .icon {
+  margin: 0 10px;
+}
+
 #mediaBox .music-and-links .direct-link {
   display: block;
   word-wrap: break-word;
@@ -489,14 +503,7 @@ a.button:hover {
   #mediaBox .music-and-links .links .link {
     float: right;
   }
-  #mediaBox .music-and-links .links .icon {
-    background-size: 80%;
-  }
-  #mediaBox .music-and-links .links .icon-mixcloud {
-    width: 5em;
-  }
   #mediaBox .music-and-links .direct-link {
-    margin-top: -.5em;
     font-size: 1em;
     text-align: right;
     width: 100%;

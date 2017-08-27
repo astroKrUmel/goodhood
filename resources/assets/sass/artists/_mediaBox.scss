@@ -13,6 +13,10 @@
         .links {
             display: inline-block;
             margin-top: 1em;
+
+            .icon {
+                margin: 0 10px;
+            }
         }
 
         .direct-link {
@@ -36,23 +40,13 @@
 
             .links {
                 float: right;
-                //margin-top: 0;
 
                 .link {
                     float: right;
                 }
-
-                .icon {
-                    background-size: 80%;
-                }
-
-                .icon-mixcloud {
-                    width: 5em;
-                }
             }
 
             .direct-link {
-                margin-top: -.5em;
                 font-size: 1em;
                 text-align: right;
                 width: 100%;

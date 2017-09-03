@@ -4,12 +4,17 @@
         /// other rows
         .table-row {
             float: left;
-            width: 100%;
+            width: calc(100% - 1em);
             text-decoration: none;
+            padding: .5em .5em .2em .5em;
 
             &:nth-child(even) {
                 background: $white;
                 color: $black;
+
+                span.icon-facebook-white {
+                    background: url($image-directory + 'icons/facebook_grey.svg') no-repeat;
+                }
             }
 
             &:nth-child(odd) {
@@ -21,16 +26,15 @@
                 opacity: .8;
             }
 
-            span {
+            span:not(.icon-facebook-white) {
                 float: left;
                 text-align: left;
                 @include dynamicTextOverflow(100%);
-                padding: .5em 0 .5em .5em;
             }
 
             /// single columns
             .name {
-                width: calc(100% - 1em);
+                width: calc(100% - 30px);
             }
 
             .date,
@@ -43,8 +47,9 @@
 
         /// head row
         .table-head {
+            padding: .75em .5em;
+
             span {
-                padding: .75em 0 .75em .5em;
                 background: $grey;
                 color: $white;
             }
@@ -56,12 +61,12 @@
     @media (min-width: $bp-xs) {
         .table .table-row {
             .name {
-                width: calc(70% - 1em);
+                width: calc(70% - 35px);
             }
 
             .location {
                 display: block;
-                width: calc(30% - 1em);
+                width: 30%;
             }
         }
     }
@@ -69,35 +74,35 @@
     @media (min-width: $bp-sm) {
         .table .table-row {
             .name {
-                width: calc(30% - 1em);
-            }
-
-            .location {
-                width: calc(15% - 1em);
-            }
-
-            .artists {
-                display: block;
-                width: calc(20% - 1em);
-            }
-
-            .city {
-                display: block;
-                width: calc(20% - 1em);
+                width: 26%;
             }
 
             .date {
                 display: block;
-                width: calc(15% - 1em);
+                width: 14%;
+            }
+
+            .artists {
+                display: block;
+                width: 20%;
+            }
+
+            .city {
+                display: block;
+                width: 17%;
+            }
+
+            .location {
+                width: 16%;
             }
         }
     }
 
-    @media (min-width: $bp-md) {
-
-    }
-
     @media (min-width: $bp-lg) {
-
+        .table .table-row {
+            .name {
+                width: 28%;
+            }
+        }
     }
 }

@@ -12,11 +12,12 @@
 
         @foreach ($events as $event)
             <a class="table-row" href="{{$event->facebookLink}}" target="_blank">
-                <span class="name">{{$event->name}}</span>
+                <span class="name" title="{{$event->name}}">{{$event->name}}</span>
                 <span class="date">{{ Carbon\Carbon::parse($event->date)->format('d.m.Y')}}</span>
-                <span class="artists">{{$event->artistNames}}</span>
-                <span class="city">{{$event->city}}</span>
-                <span class="location">{{$event->location}}</span>
+                <span class="artists" title="{{$event->artistNames}}">{{$event->artistNames}}</span>
+                <span class="city" title="{{$event->city}}">{{$event->city}}</span>
+                <span class="location" title="{{$event->location}}">{{$event->location}}</span>
+                <span class="icon icon-facebook-white icon-small"></span>
             </a>
         @endforeach
 

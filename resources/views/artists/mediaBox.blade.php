@@ -10,7 +10,7 @@
 
         <div class="links">
             @if (strlen($artist->facebookLink) > 0)
-                <a class="link icon icon-facebook" href="{{$artist->facebookLink}}" target="_blank" title="Facebook"></a>
+                <a class="link icon icon-facebook-white" href="{{$artist->facebookLink}}" target="_blank" title="Facebook"></a>
             @endif
 
             @if (strlen($artist->mixcloudLink) > 0)

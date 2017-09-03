@@ -39,11 +39,26 @@ body ul, body li {
   cursor: pointer;
 }
 
-.icon.icon-facebook {
-  background: url("/images/icons/facebook.png") no-repeat;
-  background-position: 0 -7px;
+.icon.icon-facebook-white {
+  background: url("/images/icons/facebook_white.svg") no-repeat;
   width: 50px;
   height: 50px;
+}
+
+.icon.icon-facebook-white.icon-small {
+  width: 25px;
+  height: 25px;
+}
+
+.icon.icon-facebook-grey {
+  background: url("/images/icons/facebook_grey.svg") no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.icon.icon-facebook-grey.icon-small {
+  width: 25px;
+  height: 25px;
 }
 
 .icon.icon-mixcloud {
@@ -344,13 +359,18 @@ a.button:hover {
 
 #events .table .table-row {
   float: left;
-  width: 100%;
+  width: calc(100% - 1em);
   text-decoration: none;
+  padding: .5em .5em .2em .5em;
 }
 
 #events .table .table-row:nth-child(even) {
   background: #fff;
   color: #000;
+}
+
+#events .table .table-row:nth-child(even) span.icon-facebook-white {
+  background: url("/images/icons/facebook_grey.svg") no-repeat;
 }
 
 #events .table .table-row:nth-child(odd) {
@@ -362,7 +382,7 @@ a.button:hover {
   opacity: .8;
 }
 
-#events .table .table-row span {
+#events .table .table-row span:not(.icon-facebook-white) {
   float: left;
   text-align: left;
   overflow: hidden;
@@ -370,11 +390,10 @@ a.button:hover {
   white-space: nowrap;
   max-width: 100%;
   padding-right: .25em;
-  padding: .5em 0 .5em .5em;
 }
 
 #events .table .table-row .name {
-  width: calc(100% - 1em);
+  width: calc(100% - 30px);
 }
 
 #events .table .table-row .date,
@@ -384,40 +403,49 @@ a.button:hover {
   display: none;
 }
 
+#events .table .table-head {
+  padding: .75em .5em;
+}
+
 #events .table .table-head span {
-  padding: .75em 0 .75em .5em;
   background: #8E8E8E;
   color: #fff;
 }
 
 @media (min-width: 480px) {
   #events .table .table-row .name {
-    width: calc(70% - 1em);
+    width: calc(70% - 35px);
   }
   #events .table .table-row .location {
     display: block;
-    width: calc(30% - 1em);
+    width: 30%;
   }
 }
 
 @media (min-width: 768px) {
   #events .table .table-row .name {
-    width: calc(30% - 1em);
-  }
-  #events .table .table-row .location {
-    width: calc(15% - 1em);
-  }
-  #events .table .table-row .artists {
-    display: block;
-    width: calc(20% - 1em);
-  }
-  #events .table .table-row .city {
-    display: block;
-    width: calc(20% - 1em);
+    width: 26%;
   }
   #events .table .table-row .date {
     display: block;
-    width: calc(15% - 1em);
+    width: 14%;
+  }
+  #events .table .table-row .artists {
+    display: block;
+    width: 20%;
+  }
+  #events .table .table-row .city {
+    display: block;
+    width: 17%;
+  }
+  #events .table .table-row .location {
+    width: 16%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #events .table .table-row .name {
+    width: 28%;
   }
 }
 
@@ -425,38 +453,8 @@ a.button:hover {
   margin-bottom: .5em;
 }
 
-#contact form {
-  margin: 0 auto;
-  max-width: 450px;
-}
-
-#contact label {
+#contact .button-booking {
   float: left;
-  font-weight: bold;
-  color: #fff;
-  padding: 1em 0 .1em 0;
-}
-
-#contact input {
-  width: calc(100% - 2em);
-  padding: .5em 1em;
-}
-
-#contact textarea {
-  width: calc(100% - 2em);
-  padding: 1em;
-}
-
-#contact button {
-  width: calc(100% + 1px);
-  padding: .5em 1em;
-  font-weight: bold;
-}
-
-#contact span {
-  float: left;
-  color: #fff;
-  padding: 1em 0;
 }
 
 #biography .bio-text {
@@ -525,11 +523,10 @@ a.button:hover {
 @media (min-width: 480px) {
   #partner .partner-content .partner-element {
     position: relative;
-    height: 460px;
+    height: 350px;
   }
   #partner .partner-content .partner-element img {
-    display: block;
-    margin: 0 auto;
+    margin: auto;
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -539,13 +536,6 @@ a.button:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  #partner .partner-content .partner-element {
-    height: 500px;
   }
 }
 

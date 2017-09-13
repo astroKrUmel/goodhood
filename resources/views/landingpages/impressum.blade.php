@@ -16,11 +16,8 @@
         <span>D-04275Leipzig</span>
         <br/>
         <br/>
-        <span>Web: http://www.goodhoodmusic.com</span>
+        <span>Web: <a href="http://www.goodhoodmusic.com">http://www.goodhoodmusic.com</a></span>
         <br/>
-        <br/>
-        <!-- technische umstellung -->
-        <span></span>
         <br/>
         <br/>
 
@@ -66,6 +63,19 @@
         <span>
             Dieser Haftungsausschluss ist als Teil des Internetangebotes zu betrachten, von dem aus auf diese Seite verwiesen wurde. Sofern Teile oder einzelne Formulierungen dieses Textes der geltenden Rechtslage nicht, nicht mehr oder nicht vollständig entsprechen sollten, bleiben die übrigen Teile des Dokumentes in ihrem Inhalt und ihrer Gültigkeit davon unberührt.
         </span>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <span class="headline">Gestaltung & technische Umsetzung:</span>
+        <br/>
+        <br/>
+        <span>Kevin Schwab</span><br/>
+        <span>Email:
+            <a href="mailto:{{config('goodHoodMusicConfig.technicalImplementationEmail')}}">
+                {{config('goodHoodMusicConfig.technicalImplementationEmail')}}</a>
+        </span><br/>
         <br/>
         <br/>
 

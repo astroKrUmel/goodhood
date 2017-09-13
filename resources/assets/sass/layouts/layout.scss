@@ -4,7 +4,6 @@ body {
     background: $black-content;
     color: $white;
 
-
     /// font
     font-family: 'Open Sans', sans-serif;
 
@@ -29,5 +28,9 @@ body {
         list-style-type: none;
     }
 }
+
+@import "logo";
+@import "navigation";
+@import "footer";
 
 

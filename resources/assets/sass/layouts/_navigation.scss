@@ -39,13 +39,13 @@
 
                 &:hover {
                      + .menu ul {
-                         height: 215px;
+                         height: 190px;
                      }
                 }
             }
 
             &.menu ul:hover {
-                height: 215px;
+                height: 190px;
             }
 
             ul {
@@ -65,14 +65,6 @@
                 li {
                     float: left;
                     width: 100%;
-
-                    &:hover {
-                        background: $black;
-
-                        a {
-                            color: $white;
-                        }
-                    }
                     
                     a {
                         width: 100%;
@@ -95,10 +87,6 @@
                 float: right;
                 margin: .5em 1em 0 1em;
                 cursor: pointer;
-
-                //&.logo {
-                //    background-position: 0 5px;
-                //}
 
                 &.menu-mobile-button {
                     display: none;

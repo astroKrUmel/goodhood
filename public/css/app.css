@@ -30,6 +30,142 @@ body ul, body li {
   list-style-type: none;
 }
 
+#logo {
+  margin: 0 0 1em 0;
+  width: 100%;
+}
+
+#logo .main-image, #logo img {
+  margin: 0 auto;
+}
+
+.navigation {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #fff;
+  color: #000;
+}
+
+.navigation > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation > ul > li {
+  float: right;
+  margin: .5em 1em 0 1em;
+  cursor: pointer;
+}
+
+.navigation > ul > li.logo {
+  float: left;
+  margin: 0 1em;
+  background: url("/images/logos/Logo-Black-TwoRows.png") no-repeat;
+  background-size: 100% auto;
+  background-position: 0 5px;
+  height: 39px;
+  width: 39px;
+}
+
+.navigation > ul > li.logo a {
+  display: block;
+  height: 39px;
+}
+
+.navigation > ul > li.menu-mobile-button {
+  float: right;
+  margin: 0 1em;
+  background: url("/images/menu-mobile-button.png") no-repeat;
+  background-size: 100% auto;
+  height: 40px;
+  width: 40px;
+}
+
+.navigation > ul > li.menu-mobile-button:hover + .menu ul {
+  height: 190px;
+}
+
+.navigation > ul > li.menu ul:hover {
+  height: 190px;
+}
+
+.navigation > ul > li ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background: #fff;
+  z-index: 10;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 200ms ease-in;
+}
+
+.navigation > ul > li ul li {
+  float: left;
+  width: 100%;
+}
+
+.navigation > ul > li ul li a {
+  width: 100%;
+  display: inline-block;
+  padding: .5em 1em;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+@media (min-width: 768px) {
+  .navigation > ul > li {
+    float: right;
+    margin: .5em 1em 0 1em;
+    cursor: pointer;
+  }
+  .navigation > ul > li.menu-mobile-button {
+    display: none;
+  }
+  .navigation > ul > li.menu ul:hover {
+    height: auto;
+  }
+  .navigation > ul > li.menu {
+    margin: 0;
+  }
+  .navigation > ul > li.menu ul {
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+  .navigation > ul > li.menu ul li {
+    width: initial;
+  }
+}
+
+section#footer {
+  background: #fff;
+}
+
+section#footer .navigation ul li {
+  padding: .5em 1em;
+  margin: 0;
+}
+
+section#footer .navigation ul li:hover {
+  background: #000;
+}
+
+section#footer .navigation ul li:hover a {
+  color: #fff;
+}
+
+section#footer .navigation a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
 .hidden {
   display: none !important;
 }
@@ -174,127 +310,6 @@ a.button:hover {
   margin: 0 auto;
   width: 1.4em;
   height: 1.5em;
-}
-
-#logo {
-  margin: 0 0 1em 0;
-  width: 100%;
-}
-
-#logo .main-image, #logo img {
-  margin: 0 auto;
-}
-
-.navigation {
-  position: relative;
-  float: left;
-  width: 100%;
-  background: #fff;
-  color: #000;
-}
-
-.navigation > ul {
-  margin: 0;
-  padding: 0;
-}
-
-.navigation > ul > li {
-  float: right;
-  margin: .5em 1em 0 1em;
-  cursor: pointer;
-}
-
-.navigation > ul > li.logo {
-  float: left;
-  margin: 0 1em;
-  background: url("/images/logos/Logo-Black-TwoRows.png") no-repeat;
-  background-size: 100% auto;
-  background-position: 0 5px;
-  height: 39px;
-  width: 39px;
-}
-
-.navigation > ul > li.logo a {
-  display: block;
-  height: 39px;
-}
-
-.navigation > ul > li.menu-mobile-button {
-  float: right;
-  margin: 0 1em;
-  background: url("/images/menu-mobile-button.png") no-repeat;
-  background-size: 100% auto;
-  height: 40px;
-  width: 40px;
-}
-
-.navigation > ul > li.menu-mobile-button:hover + .menu ul {
-  height: 215px;
-}
-
-.navigation > ul > li.menu ul:hover {
-  height: 215px;
-}
-
-.navigation > ul > li ul {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 200px;
-  background: #fff;
-  z-index: 10;
-  padding: 0;
-  height: 0;
-  overflow: hidden;
-  transition: height 200ms ease-in;
-}
-
-.navigation > ul > li ul li {
-  float: left;
-  width: 100%;
-}
-
-.navigation > ul > li ul li:hover {
-  background: #000;
-}
-
-.navigation > ul > li ul li:hover a {
-  color: #fff;
-}
-
-.navigation > ul > li ul li a {
-  width: 100%;
-  display: inline-block;
-  padding: .5em 1em;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.25em;
-}
-
-@media (min-width: 768px) {
-  .navigation > ul > li {
-    float: right;
-    margin: .5em 1em 0 1em;
-    cursor: pointer;
-  }
-  .navigation > ul > li.menu-mobile-button {
-    display: none;
-  }
-  .navigation > ul > li.menu ul:hover {
-    height: auto;
-  }
-  .navigation > ul > li.menu {
-    margin: 0;
-  }
-  .navigation > ul > li.menu ul {
-    height: auto;
-    position: relative;
-    width: 100%;
-  }
-  .navigation > ul > li.menu ul li {
-    width: initial;
-  }
 }
 
 .picture-collection {

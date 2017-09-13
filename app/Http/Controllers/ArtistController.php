@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use App\Artist;
 use App\Event;
+use Carbon\Carbon;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Response;
 
@@ -28,7 +29,8 @@ class ArtistController extends Controller
         }
 
         // get his own events
-        $events = $artist->events()->take(10);
+        $events = $artist->currentEvents()->take(10);
+
 
         // first artist for every event
         foreach ($events as $event) {

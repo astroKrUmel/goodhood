@@ -8,6 +8,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -42,10 +43,14 @@ class Artist extends Authenticatable
 
 
     public function mixcloundtracks() {
-        return $this->hasMany('App\Mixcloudtrack')->get();
+        return $this->hasMany('App\Mixcloudtrack')
+            ->get();
     }
 
-    public function events() {
-        return $this->belongsToMany('App\Event')->get();
+    public function currentEvents() {
+        return $this->belongsToMany('App\Event')
+            ->orderBy('date', 'ASC')
+            ->where('date', '>=', Carbon::today()->toDateString())
+            ->get();
     }
 }

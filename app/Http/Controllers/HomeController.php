@@ -28,10 +28,11 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
+
         // last 20 events and the forgein playing artists
         $events = Event::orderBy('date', 'ASC')
             ->get()
-//            ->where('date', '=>', Carbon::today()->toDateString())
+            ->where('date', '>=', Carbon::today()->toDateString())
             ->take(20);
 
         foreach ($events as $event) {

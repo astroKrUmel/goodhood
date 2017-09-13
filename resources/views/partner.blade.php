@@ -1,12 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
-    @include('common.logo')
-
     <section id="partner">
-        @include('common.navigation')
-
         <h2 class="sub-headline">PARTNERS</h2>
 
         <div class="partner-content">

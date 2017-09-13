@@ -1,12 +1,11 @@
-@extends('layouts.app')
+{{--@extends('layouts.app')--}}
+
+{{--@section('content')--}}
 
 
-@section('content')
-
-
-    <section class="all-artists">
-        <pre>
-        <?php var_dump($artists->toArray()) ?>
-        </pre>
-    </section>
-@stop
+    {{--<section class="all-artists">--}}
+        {{--<pre>--}}
+        {{--<?php var_dump($artists->toArray()) ?>--}}
+        {{--</pre>--}}
+    {{--</section>--}}
+{{--@stop--}}

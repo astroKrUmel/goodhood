@@ -20,7 +20,10 @@
 </head>
 <body>
     <div id="layout">
+        @include('layouts.logo')
+        @include('layouts.navigation')
         @yield('content')
+        @include('layouts.footer')
     </div>
     <script src="/js/app.js"></script>
 </body>

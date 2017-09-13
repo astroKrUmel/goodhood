@@ -3,10 +3,6 @@
 @section('content')
 
     <div class="artist">
-        @include('common.logo')
-
-        @include('common.navigation')
-
         @include('artists.mainPic')
 
         @if (!empty($artist->biography))

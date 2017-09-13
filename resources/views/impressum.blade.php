@@ -2,11 +2,6 @@
 
 @section('content')
     <div class="impressum">
-
-        @include('common.logo')
-
-        @include('common.navigation')
-
         <section>
             <h2 class="sub-headline">IMPRESSUM</h2>
 

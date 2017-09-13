@@ -223,6 +223,15 @@ class EventsTableSeeder extends Seeder {
                 'country'       => 'Germany',
                 'facebooklink'  => 'https://www.facebook.com/events/482037432175494/',
                 'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'name'          => 'Pretty Dirty Part III',
+                'date'          => Carbon::parse('23.09.2017'),
+                'location'      => 'Zapata',
+                'city'          => 'Jena',
+                'country'       => 'Germany',
+                'facebooklink'  => 'https://www.facebook.com/events/1728940800741928/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ]
         ]);
     }
@@ -281,6 +290,14 @@ class ArtistEventTableSeeder extends Seeder {
             [
                 'event_id' => 4,
                 'artist_id' => $artistsFromConfig['jenny-sharp']
+            ],
+            [
+                'event_id' => 5,
+                'artist_id' => $artistsFromConfig['jenny-sharp']
+            ],
+            [
+                'event_id' => 5,
+                'artist_id' => $artistsFromConfig['gvcci-ming']
             ]
         ]);
     }

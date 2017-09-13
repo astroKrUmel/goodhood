@@ -25,8 +25,8 @@ Route::get('artist/{name}/download', ['uses' => 'ArtistController@getDownload'])
 
 // LP
 Route::get('/partner', ['uses' => 'HomeController@partner']);
-//Route::get('/impressum', ['uses' => 'HomeController@impressum']);
-
+Route::get('/impressum', ['uses' => 'HomeController@impressum']);
+Route::get('/datenschutz', ['uses' => 'HomeController@datenschutz']);
 
 Auth::routes();
 

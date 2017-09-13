@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="impressum">
+    <div class="landingpages impressum">
         <section>
             <h2 class="sub-headline">IMPRESSUM</h2>
 

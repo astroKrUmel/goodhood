@@ -51,11 +51,15 @@ class HomeController extends Controller
 
     public function partner() {
         $partners = config('partners');
-        return View('partner', compact('partners'));
+        return View('landingpages.partner', compact('partners'));
     }
 
     public function impressum() {
-        return View('impressum');
+        return View('landingpages.impressum');
+    }
+
+    public function datenschutz() {
+        return View('landingpages.datenschutz');
     }
 
     public function logout() {

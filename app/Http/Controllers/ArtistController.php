@@ -36,7 +36,7 @@ class ArtistController extends Controller
         }
 
         // count images
-        $artist->galleryImages = glob('images/artists/' . $artist->urlName . '/other/*.jpg');
+        $artist->galleryImages = glob('images/artists/' . $artist->urlName . '/others/*.jpg');
 
         // get mixcloudtracks
         $tracks = $artist->mixcloundtracks();

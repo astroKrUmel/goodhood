@@ -41,8 +41,8 @@ wie sich Hip Hop und Trap Eins a verbinden lassen. Songs von Curren$y, Freddie
 Gibbs und A$AP Rocky sind für Gvcci Ming dabei ein Muss. Gvcci Ming ist ein
 Geheimtipp mit voller Partygarantie.',
                 'facebookLink' => 'https://www.facebook.com/Mingi187',
-                'mixcloudLink' => '',
-                'instagramLink' => '',
+                'mixcloudLink' => 'https://www.mixcloud.com/Mingi666/',
+                'instagramLink' => 'https://www.instagram.com/gvcciming/?hl=de',
                 'link' => '',
                 'enabled' => true
             ),
@@ -81,13 +81,13 @@ futuristische Beats zu Bass Musik, Footwork und Grime, aber auch in die
 elektronischere Richtung hin zu House.',
                 'facebookLink' => 'https://www.facebook.com/sharpradi0',
                 'mixcloudLink' => 'https://www.mixcloud.com/SharpRadio/',
-                'instagramLink' => '',
+                'instagramLink' => 'https://www.instagram.com/missjennysharp/?hl=de',
                 'link' => 'https://soundcloud.com/sharpradio',
                 'enabled' => true
             ),
             array(
                 'id'   => 4,
-                'name' => 'KitKut',
+                'name' => 'KITKUT',
                 'urlName' => 'kitkut',
                 'biography' => 'Deutschlandweit und international hat sich KITKUT in seiner 12jährigen DJ-Karriere
 mit ausgelassenen Shows zum Vollblutentertainer entwickelt. So stand er bereits
@@ -101,7 +101,7 @@ auch auf Trap. Egal wo, das Publikum liebt ihn, weil er zusammen mit den Leuten
 ausrastet und selbst aus der letzten Kellersause eine krasse Party macht.',
                 'facebookLink' => 'https://www.facebook.com/kitkutsbassroom/',
                 'mixcloudLink' => 'https://www.mixcloud.com/kitkut/',
-                'instagramLink' => 'https://www.instagram.com/explore/tags/kitkut/',
+                'instagramLink' => 'https://www.instagram.com/kit_kut/?hl=de',
                 'link' => 'http://www.beyond07.com/',
                 'enabled' => true
             ),
@@ -143,7 +143,7 @@ in der Distillery, im Conne Island und in der Alten Damenhandschufabrik überzeu
 lassen.',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
-                'instagramLink' => '',
+                'instagramLink' => 'https://www.instagram.com/jess_passeri/?hl=de',
                 'link' => 'http://wasrap.de/',
                 'enabled' => true
             ),
@@ -159,7 +159,7 @@ setzen. Ansonsten lässt er dann lieber seine Musik für sich sprechen.',
 
                 'facebookLink' => '',
                 'mixcloudLink' => '',
-                'instagramLink' => '',
+                'instagramLink' => 'https://www.instagram.com/itsgoodkat/?hl=de',
                 'link' => '',
                 'enabled' => true
             ),
@@ -176,8 +176,8 @@ Autotune von den Decks vertreiben. Smoothe Hip Hop Klassiker gepaart mit New
 School Sound bringen wieder Leben auf die Tanzfläche.',
                 'facebookLink' => '',
                 'mixcloudLink' => '',
-                'instagramLink' => '',
-                'link' => '',
+                'instagramLink' => 'https://www.instagram.com/_ar_p_/?hl=de',
+                'link' => 'http://www.beyond07.com/',
                 'enabled' => true
             ),
 
@@ -189,39 +189,39 @@ class EventsTableSeeder extends Seeder {
     public function run() {
         DB::table('events')->insert([
             [
-                'name'          => 'BASS EN MASS',
-                'date'          => Carbon::parse('16.04.2017'),
-                'location'      => 'Insel der Jugend',
-                'city'          => 'Magdeburg',
-                'country'       => 'Germany',
-                'facebooklink'  => 'https://www.facebook.com/events/276000336187964/',
-                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
-            ],
-            [
-                'name'          => 'Paper Planes',
-                'date'          => Carbon::parse('29.04.2017'),
-                'location'      => 'Weltecho',
-                'city'          => 'Chemnitz',
-                'country'       => 'Germany',
-                'facebooklink'  => 'https://www.facebook.com/events/1835004783488339/permalink/1860032137652270/',
-                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
-            ],
-            [
-                'name'          => 'All4Hiphop Jam',
-                'date'          => Carbon::parse('03.06.2017'),
-                'location'      => 'Conne Island',
+                'name'          => 'Purple Tea XIII',
+                'date'          => Carbon::parse('22.09.2017'),
+                'location'      => 'Distillery',
                 'city'          => 'Leipzig',
                 'country'       => 'Germany',
-                'facebooklink'  => 'https://www.facebook.com/events/240294323041422/',
+                'facebooklink'  => 'https://www.facebook.com/events/1996806167230055/',
                 'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ],
             [
-                'name'          => 'Santas fünftes Fest - Täubchenthal x Elipamanoke - #5/7',
-                'date'          => Carbon::parse('24.05.2017'),
-                'location'      => 'Täubchenthal',
+                'name'          => 'Levitate #1 w/ Kuso Gvki',
+                'date'          => Carbon::parse('22.09.2017'),
+                'location'      => 'DHF',
                 'city'          => 'Leipzig',
                 'country'       => 'Germany',
-                'facebooklink'  => 'https://www.facebook.com/events/217515852054483/',
+                'facebooklink'  => 'https://www.facebook.com/events/1706820066014945/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'name'          => 'Defrostatica meets Iberian Juke',
+                'date'          => Carbon::parse('29.09.2017'),
+                'location'      => 'Distillery',
+                'city'          => 'Leipzig',
+                'country'       => 'Germany',
+                'facebooklink'  => 'https://www.facebook.com/events/276536192750894/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'name'          => 'M o o d y 五',
+                'date'          => Carbon::parse('30.09.2017'),
+                'location'      => 'Kalif Storch',
+                'city'          => 'Erfurt',
+                'country'       => 'Germany',
+                'facebooklink'  => 'https://www.facebook.com/events/482037432175494/',
                 'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ]
         ]);
@@ -234,8 +234,24 @@ class MixCloudTracksSeeder extends Seeder {
         DB::table('mixcloudtracks')->insert([
             [
                 'artist_id'     => 3,
-                'code'          => 'https://soundcloud.com/itspaperplanes/jenny-sharp-paper-planes-mix'
-            ]
+                'code'          => '<iframe class="music mixcloud" width="100%" height="60" frameborder="0" src="https://www.mixcloud.com/widget/iframe/?feed=https://soundcloud.com/itspaperplanes/jenny-sharp-paper-planes-mix%2F&amp;hide_cover=1&amp;mini=1&amp;light=1"></iframe>'
+            ],
+            [
+                'artist_id'     => 1,
+                'code'          => '<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FGoodHoodMusic%2Fhood-tape-1-gvcci-ming%2F&hide_cover=1&mini=1&light=1" frameborder="0"></iframe>'
+            ],
+            [
+                'artist_id'     => 4,
+                'code'          => '<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2Fkitkut%2Fjenny-sharp-x-kitkut-kmco-teaser-mix%2F&hide_cover=1&mini=1&light=1" frameborder="0"></iframe>'
+            ],
+            [
+                'artist_id'     => 7,
+                'code'          => '<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FGoodHoodMusic%2Fhood-tape-2-passeri%2F&hide_cover=1&mini=1&light=1" frameborder="0"></iframe>'
+            ],
+            [
+                'artist_id'     => 9,
+                'code'          => '<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?feed=https%3A%2F%2Fwww.mixcloud.com%2FGoodHoodMusic%2Fhood-tape-3-by-ar-p%2F&hide_cover=1&mini=1&light=1" frameborder="0"></iframe>'
+            ],
         ]);
     }
 }
@@ -255,8 +271,8 @@ class ArtistEventTableSeeder extends Seeder {
                 'artist_id' => $artistsFromConfig['jenny-sharp']
             ],
             [
-                'event_id' => 3,
-                'artist_id' => $artistsFromConfig['passerie']
+                'event_id' => 2,
+                'artist_id' => $artistsFromConfig['goodkat']
             ],
             [
                 'event_id' => 3,
@@ -264,9 +280,8 @@ class ArtistEventTableSeeder extends Seeder {
             ],
             [
                 'event_id' => 4,
-                'artist_id' => $artistsFromConfig['kitkut']
-            ],
-
+                'artist_id' => $artistsFromConfig['jenny-sharp']
+            ]
         ]);
     }
 }

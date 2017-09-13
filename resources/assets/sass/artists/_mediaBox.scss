@@ -1,8 +1,9 @@
 #mediaBox {
 
-    .button {
+    .button-booking {
         float: left;
         width: 100%;
+        margin-bottom: 1em;
     }
 
     .music-and-links {
@@ -29,17 +30,19 @@
     @media (min-width: $bp-sm) {
         .music-and-links {
 
-            .music, .links {
+            iframe,
+            .links {
                 float: left;
                 width: calc(50% - .5em);
             }
 
-            .music {
+            iframe {
                 padding-right: 1em;
             }
 
             .links {
                 float: right;
+                margin-top: 0;
 
                 .link {
                     float: right;
@@ -50,6 +53,7 @@
                 font-size: 1em;
                 text-align: right;
                 width: 100%;
+                margin-top: .5em;
             }
         }
     }

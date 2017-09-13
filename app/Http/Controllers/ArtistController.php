@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Artist;
+use App\Event;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Response;
 
@@ -19,7 +20,7 @@ class ArtistController extends Controller
         // get artist
         $artist = Artist
             ::where('urlName', '=', strtolower($name))
-            ->where('enabled', "!=", false)
+            ->where('enabled', '!=', false)
             ->first();
 
         if (count($artist) <= 0 || $artist === null) {
@@ -35,7 +36,7 @@ class ArtistController extends Controller
         }
 
         // count images
-        $artist->galleryImages = glob('images/artists/' . $artist->urlName . '/[!main]*.jpg');
+        $artist->galleryImages = glob('images/artists/' . $artist->urlName . '/other/*.jpg');
 
         // get mixcloudtracks
         $tracks = $artist->mixcloundtracks();

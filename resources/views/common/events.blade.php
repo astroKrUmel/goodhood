@@ -13,7 +13,7 @@
         @foreach ($events as $event)
             <a class="table-row" href="{{$event->facebookLink}}" target="_blank">
                 <span class="name" title="{{$event->name}}">{{$event->name}}</span>
-                <span class="date">{{ Carbon\Carbon::parse($event->date)->format('d.m.Y')}}</span>
+                <span class="date">{{ Carbon\Carbon::parse($event->date)->format('d.m.y')}}</span>
                 <span class="artists" title="{{$event->artistNames}}">{{$event->artistNames}}</span>
                 <span class="city" title="{{$event->city}}">{{$event->city}}</span>
                 <span class="location" title="{{$event->location}}">{{$event->location}}</span>

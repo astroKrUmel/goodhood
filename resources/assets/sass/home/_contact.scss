@@ -1,40 +1,13 @@
 #contact {
+    margin-bottom: 2em;
 
     .button-booking {
         float: left;
+        margin-bottom: .5em;
     }
 
-    //form {
-    //    margin: 0 auto;
-    //    max-width: 450px;
-    //}
-    //
-    //label {
-    //    float: left;
-    //    font-weight: bold;
-    //    color: $white;
-    //    padding: 1em 0 .1em 0;
-    //}
-    //
-    //input {
-    //    width: calc(100% - 2em);
-    //    padding: .5em 1em;
-    //}
-    //
-    //textarea {
-    //    width: calc(100% - 2em);
-    //    padding: 1em;
-    //}
-    //
-    //button {
-    //    width: calc(100% + 1px);
-    //    padding: .5em 1em;
-    //    font-weight: bold;
-    //}
-    //
-    //span {
-    //    float: left;
-    //    color: $white;
-    //    padding: 1em 0;
-    //}
+    .contact-text {
+        display: block;
+        text-align: center;
+    }
 }

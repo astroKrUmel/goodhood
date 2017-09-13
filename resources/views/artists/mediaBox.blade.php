@@ -1,12 +1,11 @@
 <section id="mediaBox">
-
     <div class="music-and-links">
-        @if (!$tracks->isEmpty())
-            {!! Helper::createEmbedTemplate($tracks[0]['code'], 'mini') !!}
-        @endif
 
-        {{--{{$artist}}--}}
         <a href="mailto:{{config('goodHoodMusicConfig.bookingEmail')}}" class="button button-booking">BOOKING</a>
+
+        @if (!$tracks->isEmpty())
+            {!! $tracks[0]['code'] !!}
+        @endif
 
         <div class="links">
             @if (strlen($artist->facebookLink) > 0)

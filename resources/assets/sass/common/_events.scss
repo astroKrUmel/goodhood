@@ -61,12 +61,17 @@
     @media (min-width: $bp-xs) {
         .table .table-row {
             .name {
-                width: calc(70% - 35px);
+                width: calc(52% - 35px);
+            }
+
+            .date {
+                display: block;
+                width: 19%;
             }
 
             .location {
                 display: block;
-                width: 30%;
+                width: 28%;
             }
         }
     }

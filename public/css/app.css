@@ -414,11 +414,15 @@ a.button:hover {
 
 @media (min-width: 480px) {
   #events .table .table-row .name {
-    width: calc(70% - 35px);
+    width: calc(52% - 35px);
+  }
+  #events .table .table-row .date {
+    display: block;
+    width: 19%;
   }
   #events .table .table-row .location {
     display: block;
-    width: 30%;
+    width: 28%;
   }
 }
 
@@ -453,8 +457,18 @@ a.button:hover {
   margin-bottom: .5em;
 }
 
+#contact {
+  margin-bottom: 2em;
+}
+
 #contact .button-booking {
   float: left;
+  margin-bottom: .5em;
+}
+
+#contact .contact-text {
+  display: block;
+  text-align: center;
 }
 
 #biography .bio-text {
@@ -462,9 +476,10 @@ a.button:hover {
   line-height: 1.2em;
 }
 
-#mediaBox .button {
+#mediaBox .button-booking {
   float: left;
   width: 100%;
+  margin-bottom: 1em;
 }
 
 #mediaBox .music-and-links {
@@ -488,15 +503,17 @@ a.button:hover {
 }
 
 @media (min-width: 768px) {
-  #mediaBox .music-and-links .music, #mediaBox .music-and-links .links {
+  #mediaBox .music-and-links iframe,
+  #mediaBox .music-and-links .links {
     float: left;
     width: calc(50% - .5em);
   }
-  #mediaBox .music-and-links .music {
+  #mediaBox .music-and-links iframe {
     padding-right: 1em;
   }
   #mediaBox .music-and-links .links {
     float: right;
+    margin-top: 0;
   }
   #mediaBox .music-and-links .links .link {
     float: right;
@@ -505,6 +522,7 @@ a.button:hover {
     font-size: 1em;
     text-align: right;
     width: 100%;
+    margin-top: .5em;
   }
 }
 
@@ -516,8 +534,9 @@ a.button:hover {
 
 #partner .partner-content {
   float: left;
-  width: 100%;
+  width: calc(100% - 20px);
   background: #fff;
+  padding: 10px;
 }
 
 @media (min-width: 480px) {
@@ -527,8 +546,8 @@ a.button:hover {
   }
   #partner .partner-content .partner-element img {
     margin: auto;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 80%;
+    max-width: 80%;
     width: auto;
     height: auto;
     position: absolute;

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Artist;
 use App\Event;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -28,7 +29,10 @@ class HomeController extends Controller
      */
     public function index(){
         // last 20 events and the forgein playing artists
-        $events = Event::all()->take(20);
+        $events = Event::orderBy('date', 'ASC')
+            ->get()
+//            ->where('date', '=>', Carbon::today()->toDateString())
+            ->take(20);
 
         foreach ($events as $event) {
             $artists = $event->artists();

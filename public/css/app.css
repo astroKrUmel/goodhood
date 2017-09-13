@@ -144,6 +144,8 @@ body ul, body li {
 }
 
 section#footer {
+  margin: 0;
+  width: 100%;
   background: #fff;
 }
 
@@ -547,11 +549,17 @@ a.button:hover {
   margin-top: 2em;
 }
 
+.landingpage .headline {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 #partner .partner-content {
   float: left;
   width: calc(100% - 20px);
   background: #fff;
   padding: 10px;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 480px) {

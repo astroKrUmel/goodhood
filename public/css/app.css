@@ -490,6 +490,22 @@ a.button:hover {
   text-align: center;
 }
 
+#main-pic .artist-image {
+  overflow: hidden;
+}
+
+@media (min-width: 480px) {
+  #main-pic .artist-image {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-pic .artist-image {
+    height: 400px;
+  }
+}
+
 #biography .bio-text {
   font-size: 1.2em;
   line-height: 1.2em;

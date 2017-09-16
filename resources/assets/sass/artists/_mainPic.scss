@@ -1,0 +1,18 @@
+#main-pic {
+    .artist-image {
+        overflow: hidden;
+    }
+    
+
+    @media (min-width: $bp-xs) {
+        .artist-image {
+            height: 300px;
+        }
+    }
+
+    @media (min-width: $bp-sm) {
+        .artist-image {
+            height: 400px;
+        }
+    }
+}

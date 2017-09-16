@@ -18,9 +18,6 @@
                 <li class="partners">
                     <a href="/partner" target="_blank">Partner</a>
                 </li>
-                {{--<li class="impressum">--}}
-                    {{--<a href="/impressum">Impressum</a>--}}
-                {{--</li>--}}
             </ul>
         </li>
     </ul>

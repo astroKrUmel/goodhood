@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }}</title>
-    <link rel="shortcut icon" href="/images/logos/Logo-Black-TwoRows.png" />
+    <link rel="shortcut icon" href="/images/logos/Logo-Black-TwoRows.svg" />
 
     <link href="/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -20,10 +20,10 @@
 </head>
 <body>
     <div id="layout">
-        @include('layouts.logo')
-        @include('layouts.navigation')
+        @include('common.logo')
+        @include('common.navigation')
         @yield('content')
-        @include('layouts.footer')
+        @include('common.footer')
     </div>
     <script src="/js/app.js"></script>
 </body>

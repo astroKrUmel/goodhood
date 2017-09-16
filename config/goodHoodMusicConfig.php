@@ -10,7 +10,7 @@ return [
         'kitkut'                        => 4,
         'alex-the-kit'                  => 5,
         'dj-dorbystarr'                 => 6,
-        'passerie'                      => 7,
+        'passeri'                       => 7,
         'goodkat'                       => 8,
         'ar-p'                          => 9,
     ],

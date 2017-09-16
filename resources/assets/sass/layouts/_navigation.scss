@@ -37,15 +37,17 @@
                 height: 40px;
                 width: 40px;
 
-                &:hover {
+                &:hover, &:active {
                      + .menu ul {
                          height: 190px;
                      }
                 }
             }
 
-            &.menu ul:hover {
-                height: 190px;
+            &.menu ul {
+                &:hover, &:active {
+                    height: 190px;
+                }
             }
 
             ul {

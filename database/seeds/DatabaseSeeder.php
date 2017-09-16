@@ -131,8 +131,8 @@ Auch als Band-DJ von den Obskuriosen und critical.Entertainment hat er sich eine
             ),
             array(
                 'id'   => 7,
-                'name' => 'Passerie',
-                'urlName' => 'passerie',
+                'name' => 'Passeri',
+                'urlName' => 'passeri',
                 'biography' => 'Was hat Passeri mit Rap zu tun? Eine ganze Menge! Sie ist nicht nur die Kennerin
 der Good Hood Klik im Bereich Deutschrap und Future Beats, sondern supportet
 auch als Konzert-Photographin und Redakteurin des eigenen Onlinemagazins
@@ -232,6 +232,15 @@ class EventsTableSeeder extends Seeder {
                 'country'       => 'Germany',
                 'facebooklink'  => 'https://www.facebook.com/events/1728940800741928/',
                 'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'name'          => 'G E T R I C H ‖ Vol. 2',
+                'date'          => Carbon::parse('07.10.2017'),
+                'location'      => 'DHF',
+                'city'          => 'Leizpig',
+                'country'       => 'Germany',
+                'facebooklink'  => 'https://www.facebook.com/events/102362383816446/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ]
         ]);
     }
@@ -298,6 +307,10 @@ class ArtistEventTableSeeder extends Seeder {
             [
                 'event_id' => 5,
                 'artist_id' => $artistsFromConfig['gvcci-ming']
+            ],
+            [
+                'event_id' => 6,
+                'artist_id' => $artistsFromConfig['kitkut']
             ]
         ]);
     }

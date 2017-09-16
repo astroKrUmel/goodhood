@@ -18,7 +18,6 @@ class AppServiceProvider extends ServiceProvider
     {
 
         // config
-//        View::share('bookingEmail', Config::get('goodHoodMusicConfig.bookingEmail'));
         View::composer('*', function($view) {
             $view->with('auth', Auth::user());
         });

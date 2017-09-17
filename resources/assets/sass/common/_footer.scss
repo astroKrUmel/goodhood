@@ -6,7 +6,7 @@ section#footer {
     .navigation {
 
         ul li {
-            padding: .5em 1em;
+            padding: 1em 1.5em;
             margin: 0;
 
             &:hover {
@@ -21,7 +21,6 @@ section#footer {
         a {
             text-decoration: none;
             color: $black;
-            font-weight: bold;
         }
     }
 }

@@ -1,8 +1,8 @@
 <?php
 return [
     'bookingEmail'                      => 'booking@goodhoodmusic.com',
-    'bookingEmailText'                  => 'Für generelle Bookinganfragen schickt uns eine E-Mail an "booking[at]goodhoodmusic.com".',
-    'technicalImplementationEmail'      => 'cyclonicmen@googlemail.com',
+    'bookingEmailText'                  => 'Für generelle Bookinganfragen schickt uns eine E-Mail an "booking [at] goodhoodmusic.com".',
+    'technicalImplementationEmail'      => 'cyclonicmen [at] googlemail.com',
     'artists' => [
         'gvcci-ming'                    => 1,
         'phax'                          => 2,

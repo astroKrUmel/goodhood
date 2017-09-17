@@ -135,7 +135,6 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
     else {
         // Layer muss angezeigt werden
         $('#startpageOverlay').removeClass('hidden');
-
     }
 
     $('#startpageOverlay').on('click', function () {

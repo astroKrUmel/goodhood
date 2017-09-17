@@ -38,14 +38,14 @@
 
                 &:hover, &:active {
                      + .menu ul {
-                         height: 190px;
+                         height: 220px;
                      }
                 }
             }
 
             &.menu ul {
                 &:hover, &:active {
-                    height: 190px;
+                    height: 220px;
                 }
             }
 
@@ -70,11 +70,9 @@
                     a {
                         width: 100%;
                         display: inline-block;
-                        padding: .5em 1em;
+                        padding: 1em 1.5em;
                         color: $black;
                         text-decoration: none;
-                        font-weight: bold;
-                        font-size: 1.25em;
                     }
                 }
             }
@@ -103,7 +101,7 @@
                 }
 
                 &.menu {
-                    margin: 0;
+                    margin: 0 1em 0 0;
 
                     ul {
                         height: auto;
@@ -111,7 +109,8 @@
                         width: 100%;
 
                         li {
-                            width: initial;
+                            //width: initial;
+                            width: auto;
                         }
                     }
                 }

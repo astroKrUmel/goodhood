@@ -12,7 +12,6 @@
     else {
         // Layer muss angezeigt werden
         $('#startpageOverlay').removeClass('hidden');
-
     }
 
     $('#startpageOverlay').on('click', function () {

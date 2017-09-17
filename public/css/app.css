@@ -82,11 +82,11 @@ body ul, body li {
 }
 
 .navigation > ul > li.menu-mobile-button:hover + .menu ul, .navigation > ul > li.menu-mobile-button:active + .menu ul {
-  height: 190px;
+  height: 220px;
 }
 
 .navigation > ul > li.menu ul:hover, .navigation > ul > li.menu ul:active {
-  height: 190px;
+  height: 220px;
 }
 
 .navigation > ul > li ul {
@@ -110,11 +110,9 @@ body ul, body li {
 .navigation > ul > li ul li a {
   width: 100%;
   display: inline-block;
-  padding: .5em 1em;
+  padding: 1em 1.5em;
   color: #000;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.25em;
 }
 
 @media (min-width: 768px) {
@@ -133,7 +131,7 @@ body ul, body li {
     height: auto;
   }
   .navigation > ul > li.menu {
-    margin: 0;
+    margin: 0 1em 0 0;
   }
   .navigation > ul > li.menu ul {
     height: auto;
@@ -141,7 +139,7 @@ body ul, body li {
     width: 100%;
   }
   .navigation > ul > li.menu ul li {
-    width: initial;
+    width: auto;
   }
 }
 
@@ -152,7 +150,7 @@ section#footer {
 }
 
 section#footer .navigation ul li {
-  padding: .5em 1em;
+  padding: 1em 1.5em;
   margin: 0;
 }
 
@@ -167,7 +165,6 @@ section#footer .navigation ul li:hover a {
 section#footer .navigation a {
   text-decoration: none;
   color: #000;
-  font-weight: bold;
 }
 
 .hidden {

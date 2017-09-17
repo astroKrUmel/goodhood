@@ -12,10 +12,11 @@
     else {
         // Layer muss angezeigt werden
         $('#startpageOverlay').removeClass('hidden');
+
     }
 
     $('#startpageOverlay').on('click', function () {
-        $('body').scrollTop(0);
+        $(document).scrollTop(0)
         $(this).addClass('fade-out');
 
         $.cookie('startpageOverlay', '1', { expires: 1 });

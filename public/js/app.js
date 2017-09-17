@@ -122,6 +122,26 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 }));
 
 /**
+ * Created by Kevin on 17.09.2017.
+ */
+
+
++function ($) {
+
+    var initNavigationStyling = function () {
+        var $NaviTabs = $('.navigation .menu ul li a'),
+            sActiveTabClass = 'active-tab';
+
+        $NaviTabs.on('click', function() {
+            $NaviTabs.removeClass(sActiveTabClass);
+            $(this).addClass(sActiveTabClass)
+        });
+    };
+
+    initNavigationStyling();
+
+} (jQuery);
+/**
  * Created by Kevin on 14.08.2017.
  */
 

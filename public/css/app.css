@@ -115,6 +115,10 @@ body ul, body li {
   text-decoration: none;
 }
 
+.navigation > ul > li ul li a.active-tab {
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .navigation > ul > li {
     float: right;
@@ -139,6 +143,9 @@ body ul, body li {
     width: 100%;
   }
   .navigation > ul > li.menu ul li {
+    width: auto;
+  }
+  .navigation > ul > li.menu ul li a {
     width: auto;
   }
 }

@@ -324,7 +324,6 @@ a.button:hover {
 }
 
 .picture-collection strong {
-  display: none;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -333,14 +332,8 @@ a.button:hover {
   width: 80%;
   text-align: center;
   color: #fff;
-}
-
-.picture-collection:hover {
-  opacity: .8;
-}
-
-.picture-collection:hover strong {
-  display: block;
+  opacity: .7;
+  text-shadow: 0 0 20px #000;
 }
 
 @media (min-width: 480px) {
@@ -373,6 +366,12 @@ a.button:hover {
   }
   .picture-collection:nth-of-type(3n+3) {
     margin: 0.5em 0 0.5em 0.5em;
+  }
+  .picture-collection strong {
+    display: none;
+  }
+  .picture-collection:hover strong {
+    display: block;
   }
 }
 

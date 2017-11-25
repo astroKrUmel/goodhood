@@ -1,6 +1,10 @@
 <section id="mediaBox">
     <div class="music-and-links">
 
+        @if ($artist->id === 3 || $artist->id === 8)
+            <p>Für Bookinganfragen außerhalb Leipzigs schickt bitte eine E-Mail an {{config('goodHoodMusicConfig.emailNotLeipzig')}}.</p>
+        @endif
+
         <a href="mailto:{{config('goodHoodMusicConfig.bookingEmail')}}" class="button button-booking">BOOKING</a>
 
         @if (!$tracks->isEmpty())

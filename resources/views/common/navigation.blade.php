@@ -3,7 +3,7 @@
         <li class="logo">
             <a href="/home"></a>
         </li>
-        <li class="menu-mobile-button" onclick=""></li>
+        <li class="menu-mobile-button"></li>
         <li class="menu">
             <ul>
                 <li class="artists">

@@ -241,6 +241,24 @@ class EventsTableSeeder extends Seeder {
                 'country'       => 'Germany',
                 'facebooklink'  => 'https://www.facebook.com/events/102362383816446/',
                 'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'name'          => 'BASS EN MASS | Doppelbass Special',
+                'date'          => Carbon::parse('02.10.2017'),
+                'location'      => 'Insel der Jugend',
+                'city'          => 'Magdeburg',
+                'country'       => 'Germany',
+                'facebooklink'  => 'https://www.facebook.com/events/113014962778288',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
+            ],
+            [
+                'name'          => 'Offizielle After-Race-Party SX',
+                'date'          => Carbon::parse('02.12.2017'),
+                'location'      => 'Pentagon3',
+                'city'          => 'Chemnitz',
+                'country'       => 'Germany',
+                'facebooklink'  => 'https://www.facebook.com/events/1225430230917707/',
+                'created_at'    => Carbon::now()->format('Y-m-d H:i:s'),
             ]
         ]);
     }
@@ -310,6 +328,14 @@ class ArtistEventTableSeeder extends Seeder {
             ],
             [
                 'event_id' => 6,
+                'artist_id' => $artistsFromConfig['kitkut']
+            ],
+            [
+                'event_id' => 7,
+                'artist_id' => $artistsFromConfig['kitkut']
+            ],
+            [
+                'event_id' => 8,
                 'artist_id' => $artistsFromConfig['kitkut']
             ]
         ]);

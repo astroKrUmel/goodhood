@@ -7,6 +7,10 @@
     width: 100%;
     margin: 0 0 calc(2 * #{$image-space}) 0;
 
+    &:hover {
+        opacity: .7;
+    }
+
     /// text mittig setzen
     strong {
         position: absolute;

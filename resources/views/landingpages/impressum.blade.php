@@ -68,7 +68,14 @@
         <br/>
         <br/>
 
-        <span class="headline">Gestaltung & technische Umsetzung:</span>
+        <span class="headline">technische Gestaltung</span>
+        <br/>
+        <br/>
+        <span>Emily Olbricht</span><br/>
+        <br/>
+        <br/>
+
+        <span class="headline">technische Umsetzung:</span>
         <br/>
         <br/>
         <span>Kevin Schwab</span><br/>

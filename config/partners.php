@@ -7,25 +7,28 @@
  * Time: 20:55
  */
 return [
-
-    '1' => [
-        'name' => 'newDef.jpg',
-        'link' => 'http://www.newdef.de/ '
+    [
+        'name' => 'splash.png',
+        'link' => 'http://splash-entertainment.net/'
     ],
-    '2' => [
+    [
+        'name' => 'beyond_logo.png',
+        'link' => 'http://beyond07.com/'
+    ],
+    [
         'name' => 'RadioAktiv2punkt0.png',
         'link' => 'https://www.radioaktiv2punkt0.com/'
     ],
-    '3' => [
+    [
         'name' => 'BeppoSAndPeterB.png',
         'link' => 'https://beppoundpeter.bandcamp.com/'
     ],
-    '4' => [
+    [
         'name' => 'buzz-up.png',
         'link' => 'http://www.newdef.de/'
     ],
-    '5' => [
-        'name' => 'beyond_logo.png',
-        'link' => 'http://beyond07.com/'
+    [
+        'name' => 'newDef.jpg',
+        'link' => 'http://www.newdef.de/ '
     ]
 ];

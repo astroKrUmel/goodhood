@@ -27,6 +27,13 @@ body {
     ul, li {
         list-style-type: none;
     }
+
+    .layer-active {
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @import "../common/logo";

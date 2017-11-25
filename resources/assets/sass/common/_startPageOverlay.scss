@@ -10,13 +10,14 @@
 
     transition: height .5s ease-in-out;
 
-    &.fade-out {
-        height: 0;
+    //&.fade-out {
+    //    height: 0;
+    //
+    //    img {
+    //        height: 0;
+    //    }
+    //}
 
-        img {
-            height: 0;
-        }
-    }
 
     .main-image, img {
         display: block;

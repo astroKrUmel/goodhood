@@ -1,6 +1,7 @@
 <?php
 return [
     'bookingEmail'                      => 'booking@goodhoodmusic.com',
+    'emailNotLeipzig'                   => 'felix.schubert [at] splash-entertainment.net',
     'bookingEmailText'                  => 'Für generelle Bookinganfragen schickt uns eine E-Mail an "booking [at] goodhoodmusic.com".',
     'technicalImplementationEmail'      => 'cyclonicmen [at] googlemail.com',
     'artists' => [

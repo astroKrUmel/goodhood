@@ -35,18 +35,11 @@
                 background-size: 100% auto;
                 height: 40px;
                 width: 40px;
-
-                &:hover, &:active {
-                     + .menu ul {
-                         height: 220px;
-                     }
-                }
             }
 
-            &.menu ul {
-                &:hover, &:active {
-                    height: 220px;
-                }
+            /// für die mobile Navi-Liste mobile
+            &.menu ul.show-mobile-list {
+                height: 220px;
             }
 
             ul {
@@ -58,7 +51,7 @@
                 z-index: 10;
                 padding: 0;
 
-                // for animation
+                /// für die Animation der mobile Navi-Liste
                 height: 0;
                 overflow: hidden;
                 transition: height 200ms ease-in;
@@ -99,11 +92,6 @@
                     display: none;
                 }
 
-                /// kein dropdown mehr -> keine animation bei hover
-                &.menu ul:hover {
-                    height: auto;
-                }
-
                 &.menu {
                     margin: 0 1em 0 0;
 
@@ -111,6 +99,10 @@
                         height: auto;
                         position: relative;
                         width: 100%;
+
+                        &.show-mobile-list {
+                            height: auto;
+                        }
 
                         li {
                             width: auto;

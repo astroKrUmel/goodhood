@@ -30,6 +30,13 @@ body ul, body li {
   list-style-type: none;
 }
 
+body .layer-active {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
 #logo {
   margin: 1em 0;
   width: 100%;
@@ -81,11 +88,7 @@ body ul, body li {
   width: 40px;
 }
 
-.navigation > ul > li.menu-mobile-button:hover + .menu ul, .navigation > ul > li.menu-mobile-button:active + .menu ul {
-  height: 220px;
-}
-
-.navigation > ul > li.menu ul:hover, .navigation > ul > li.menu ul:active {
+.navigation > ul > li.menu ul.show-mobile-list {
   height: 220px;
 }
 
@@ -131,9 +134,6 @@ body ul, body li {
   .navigation > ul > li.menu-mobile-button {
     display: none;
   }
-  .navigation > ul > li.menu ul:hover {
-    height: auto;
-  }
   .navigation > ul > li.menu {
     margin: 0 1em 0 0;
   }
@@ -141,6 +141,9 @@ body ul, body li {
     height: auto;
     position: relative;
     width: 100%;
+  }
+  .navigation > ul > li.menu ul.show-mobile-list {
+    height: auto;
   }
   .navigation > ul > li.menu ul li {
     width: auto;
@@ -291,14 +294,6 @@ a.button:hover {
   transition: height .5s ease-in-out;
 }
 
-#startpageOverlay.fade-out {
-  height: 0;
-}
-
-#startpageOverlay.fade-out img {
-  height: 0;
-}
-
 #startpageOverlay .main-image, #startpageOverlay img {
   display: block;
   width: 100%;
@@ -325,6 +320,10 @@ a.button:hover {
   float: left;
   width: 100%;
   margin: 0 0 calc(2 * 0.5em) 0;
+}
+
+.picture-collection:hover {
+  opacity: .7;
 }
 
 .picture-collection strong {

@@ -23,10 +23,10 @@ return [
         'name' => 'BeppoSAndPeterB.png',
         'link' => 'https://beppoundpeter.bandcamp.com/'
     ],
-    [
-        'name' => 'buzz-up.png',
-        'link' => 'http://www.newdef.de/'
-    ],
+//    [
+//        'name' => 'buzz-up.png',
+//        'link' => 'http://www.newdef.de/'
+//    ],
     [
         'name' => 'newDef.jpg',
         'link' => 'http://www.newdef.de/ '

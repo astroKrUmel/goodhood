@@ -526,6 +526,7 @@ a.button:hover {
 }
 
 #mediaBox .music-and-links .links {
+  width: 100%;
   display: inline-block;
   margin-top: 1em;
 }
